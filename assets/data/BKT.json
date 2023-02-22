@@ -1,0 +1,1857 @@
+[
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 600",
+        "Product": "1050/50R32 184A8 181B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "1050/50R32 CHO 184A8 181B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "180/95R16 105A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "200/70R16 94A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "210/90R20 110A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "210/90R24 107A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "210/95R16 106A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "210/95R18 108A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "210/95R20 110A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "210/95R28 116A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "210/95R32 120A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "210/95R44 120A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "220/70R16 99A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "230/95R32 128A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "230/95R36 130A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "230/95R40 132A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "230/95R42 133A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "230/95R44 134A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "230/95R48 136A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "240/70R16 104A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "250/85R20 116A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "250/85R22 113A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "250/85R22 113A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "250/85R24 109A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "250/85R24 109A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "250/85R28 112A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "250/85R28 112A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "260/70R16 109A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "260/70R20 113A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "260/70R20 113A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "270/95R32 136A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "270/95R36 139A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "270/95R38 140A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "270/95R44 142A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "270/95R46 143A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "270/95R48 144A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "270/95R54 146A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "280/70R16 112A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "280/70R18 114A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "280/70R20 116A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "280/70R20 116A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "280/85R20 112A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "280/85R24 115A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "280/85R24 115A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "280/85R28 118A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "280/85R28 118A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "300/70R20 120A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "300/85R42 144A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "300/95R46 148A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "300/95R52 151A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "320/65R16 117D 120A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "320/65R18 109A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "320/70R20 123A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "320/70R24 116A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "320/70R24 116A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "320/70R24 116D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "320/70R24 116D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "320/85R20 119A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "320/85R24 122A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "320/85R24 122A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "320/85R28 124A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "320/85R28 124A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "320/85R32 126A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "320/85R32 126A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "320/85R34 141A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "320/85R34 141A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "320/85R36 128A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "320/85R36 128A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "320/85R36 147D 150A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "320/85R38 143A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "320/85R38 143A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945",
+        "Product": "320/90R42 139A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945 (SPECIAL)",
+        "Product": "320/90R42 139A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945",
+        "Product": "320/90R46 146A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945 (SPECIAL)",
+        "Product": "320/90R46 146A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945",
+        "Product": "320/90R46 148D 151A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945 (SPECIAL)",
+        "Product": "320/90R46 148D 151A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945",
+        "Product": "320/90R50 150A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945 (SPECIAL)",
+        "Product": "320/90R50 150A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945",
+        "Product": "320/90R54 156A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945 (SPECIAL)",
+        "Product": "320/90R54 156A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "340/65R18 113A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "340/65R20 124D 127A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "340/85R24 125A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "340/85R24 125A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "340/85R28 127A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "340/85R28 127A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "340/85R36 132A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "340/85R36 132A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX ELOS",
+        "Product": "340/85R38 133A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "340/85R38 133A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "340/85R38 133A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "340/85R46 150A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 955",
+        "Product": "340/85R48 152A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "360/70R20 129A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "360/70R24 122A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "360/70R24 122A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "360/70R24 122D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "360/70R24 122D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "360/70R28 125A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "360/70R28 125A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "360/70R28 125D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "360/70R28 125D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "380/70R20 132A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "380/70R24 125A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "380/70R24 125A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "380/70R24 125D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "380/70R24 125D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "380/70R28 127A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "380/70R28 127A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "380/70R28 127D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "380/70R28 127D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "380/85R24 131A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "380/85R24 131A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "380/85R28 133A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "380/85R28 133A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "380/85R30 135A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "380/85R30 135A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "380/85R34 137A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "380/85R34 137A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX ELOS",
+        "Product": "380/85R38 139A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "380/85R38 139A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "380/85R38 139A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945",
+        "Product": "380/90R46 155A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945",
+        "Product": "380/90R46 159A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945 (SPECIAL)",
+        "Product": "380/90R46 159A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945",
+        "Product": "380/90R50 151A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945 (SPECIAL)",
+        "Product": "380/90R50 151A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945",
+        "Product": "380/90R50 160A8/B "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945",
+        "Product": "380/90R54 158A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945 (SPECIAL)",
+        "Product": "380/90R54 158A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "420/65R20 135D 138A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "420/65R24 138D 141A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "420/65R28 135D 138A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "420/65R30 136D 139A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "420/70R24 130A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "420/70R24 130A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "420/70R24 130D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "420/70R24 130D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "420/70R24 134D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "420/70R24 134D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "420/70R28 133A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "420/70R28 133A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "420/70R28 133D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "420/70R28 133D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "420/70R30 134A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "420/70R30 134A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "420/70R30 134D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "420/70R30 134D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "420/80R46 151D 162A2"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "420/80R46 159D 170A2"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "420/80R46 159D 170A2"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "420/85R24 137A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX ELOS",
+        "Product": "420/85R28 139A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "420/85R28 139A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "420/85R28 139A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "420/85R30 140A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "420/85R30 140A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "420/85R34 142A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "420/85R34 142A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "420/85R34 147A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX ELOS",
+        "Product": "420/85R38 144A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "420/85R38 144A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "420/85R38 144A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 945",
+        "Product": "420/90R30 147A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "440/65R20 138D 141A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "440/65R24 135D 138A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657 (SPECIAL)",
+        "Product": "440/65R24 135D 138A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "440/65R28 138D 141A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "460/85R30 145A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "460/85R30 145A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "460/85R34 147A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "460/85R34 147A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "460/85R34 158A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "460/85R38 149A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "460/85R38 149A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "480/65R24 140D 143A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657 (SPECIAL)",
+        "Product": "480/65R24 140D 143A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "480/65R28 142D 145A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "480/70R24 138A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "480/70R24 138A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "480/70R24 138D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "480/70R24 138D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "480/70R28 140A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "480/70R28 140A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "480/70R28 140D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "480/70R28 140D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "480/70R30 141A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "480/70R30 141A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "480/70R30 141D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "480/70R30 141D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "480/70R34 149A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "480/70R34 149A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "480/70R34 149D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "480/70R34 149D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "480/70R34 155A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "480/70R34 155D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "480/70R34 155D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "480/70R38 145A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "480/70R38 145D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "480/70R38 145D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX ELOS",
+        "Product": "480/80R38 149A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "480/80R38 149A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX ELOS",
+        "Product": "480/80R42 151A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "480/80R42 151A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "480/80R46 158A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "480/80R46 164A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "480/80R50 159A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (STEEL BELTED)",
+        "Product": "480/80R50 176A8 "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "520/70R34 148A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "520/70R34 148D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "520/70R34 148D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "520/70R38 150A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "520/70R38 150D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "520/70R38 150D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "520/85R38 155A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "520/85R38 155A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "520/85R38 170A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "520/85R38 170A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX ELOS",
+        "Product": "520/85R42 157A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "520/85R42 157A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "520/85R42 157A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "520/85R42 167A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "520/85R42 167A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "520/85R42 168D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "520/85R46 158A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855 (SPECIAL)",
+        "Product": "520/85R46 158A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "520/85R46 173A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 855",
+        "Product": "520/85R50 165A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "540/65R24 146D 149A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 600",
+        "Product": "540/65R28 142D 145A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "540/65R28 149D 152A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657 (SPECIAL)",
+        "Product": "540/65R28 149D 152A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SIRIO (HIGH SPEED)",
+        "Product": "540/65R30 150D 147E"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "540/65R30 150D 153A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657 (SPECIAL)",
+        "Product": "540/65R30 150D 153A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SIRIO (HIGH SPEED)",
+        "Product": "540/65R34 152D 149E"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "540/65R34 152D 155A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657 (SPECIAL)",
+        "Product": "540/65R34 152D 155A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SIRIO (HIGH SPEED)",
+        "Product": "540/65R38 153D 150E"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "540/65R38 153D 156A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657 (SPECIAL)",
+        "Product": "540/65R38 153D 156A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "580/70R38 155A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "580/70R38 155D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "580/70R38 155D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (STEEL BELTED)",
+        "Product": "580/70R38 180A8 "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "600/65R28 154D 157A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "600/65R30 155D 158A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "600/65R34 157D 160A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657 (SPECIAL)",
+        "Product": "600/65R34 157D 160A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "600/65R38 159D 162A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "600/70R30 152A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "600/70R30 152D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "600/70R30 152D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORTIS",
+        "Product": "600/70R30 158D 161A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORTIS (SPECIAL)",
+        "Product": "600/70R30 158D 161A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORTIS",
+        "Product": "600/70R34 160D 163A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORTIS (SPECIAL)",
+        "Product": "600/70R34 160D 163A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "620/70R38 170A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "620/70R38 170D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "620/70R42 160A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "620/70R42 160D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "620/70R42 160D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "620/70R42 166A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "620/70R42 166D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "620/70R42 166D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "620/70R42 173D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "620/70R42 173D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "620/70R46 162A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "620/70R46 162D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "620/70R46 162D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 600",
+        "Product": "620/75R26 167A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "620/75R26 CHO 166A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "620/75R30 CHO 168A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 600",
+        "Product": "650/65R38 157D 160A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "650/65R38 163D 166A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 657",
+        "Product": "650/65R42 165D 168A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 600",
+        "Product": "650/75R32 172A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "650/75R32 CHO 172A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "650/75R38 169D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "650/75R42 170D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORTIS",
+        "Product": "650/85R38 173D 176A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORTIS (SPECIAL)",
+        "Product": "650/85R38 173D 176A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "710/55R28 CHO 164A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "710/70R38 166A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "710/70R38 166D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SIRIO (HIGH SPEED)",
+        "Product": "710/70R38 171D 168E"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "710/70R38 171D 174A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "710/70R38 175D 178A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "710/70R38 175D 178A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX ELOS",
+        "Product": "710/70R38 178A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "710/70R38 178A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 600",
+        "Product": "710/70R38 178D 181A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "710/70R42 173A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "710/70R42 173D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "710/70R42 173D 176A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765",
+        "Product": "710/70R42 176D 179A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 765 (SPECIAL)",
+        "Product": "710/70R42 176D 179A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORTIS",
+        "Product": "710/75R42 175D 172E"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORTIS (SPECIAL)",
+        "Product": "710/75R42 175D 172E"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 600",
+        "Product": "750/65R26 171A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "750/65R26 CHO 166A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "750/65R26 CHO 171A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 600",
+        "Product": "800/65R32 176A8 173B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 600",
+        "Product": "800/65R32 181A8 178B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "800/65R32 CHO 178A8 175B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORTIS",
+        "Product": "800/70R38 178D 181A8"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 600",
+        "Product": "900/60R32 181A8 178B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "900/60R32 CHO 181A8 178B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "900/60R32 CHO 185A8 182B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF380/80R38 149D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF420/85R38 155D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF480/95R50 170D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "IF580/80R34 CFO 177D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF600/70R28 164D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SIRIO (HIGH SPEED)",
+        "Product": "IF600/70R30 165D 162E"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE (SPECIAL)",
+        "Product": "IF600/70R30 CFO 165D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF600/70R34 167D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF620/75R30 CFO 169D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF650/60R34 165D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF650/65R34 CFO 161D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE (SPECIAL)",
+        "Product": "IF650/65R34 CFO 161D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF650/65R38 CFO 169D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF650/85R38 CFO 179D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF650/85R42 CFO 180D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX RT 600",
+        "Product": "IF680/85R32 179D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF710/55R28 CFO 165D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF710/55R30 CFO 166D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF710/55R34 CFO 170D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF710/60R30 CFO 168D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF710/60R34 CFO 170D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF710/60R38 172D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF710/70R42 CFO 179D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE (SPECIAL)",
+        "Product": "IF710/70R42 CFO 179D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "IF710/75R32 CFO 183A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF710/75R34 CFO 178D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX TERIS",
+        "Product": "IF710/75R34 CFO 184A8 B"
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF710/75R42 CFO 181D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE (SPECIAL)",
+        "Product": "IF710/75R42 CFO 181D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF750/75R46 CFO 186D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF800/70R38 CFO 184D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF800/70R42 CFO 186D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF900/50R42 CFO 180D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF900/60R38 CFO 184D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX FORCE",
+        "Product": "IF900/60R42 CFO 186D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SPARGO",
+        "Product": "VF380/105R50 179D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SPARGO",
+        "Product": "VF380/85R38 161D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SPARGO",
+        "Product": "VF380/90R46 173D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SPARGO",
+        "Product": "VF380/90R50 175D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SPARGO",
+        "Product": "VF420/95R50 177D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF480/60R28 NRO 145D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SPARGO",
+        "Product": "VF480/80R46 177D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX SPARGO",
+        "Product": "VF480/80R50 179D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF520/60R28 NRO 149D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF540/65R28 NRO 154D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF540/65R30 NRO 158D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF540/65R38 NRO 162D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF580/85R42 CFO 183D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF600/60R28 NRO 157D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF600/60R30 NRO 158D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF600/60R38 NRO 166D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF600/60R38 NRO 168D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF600/70R30 NRO 168D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF650/60R38 NRO 166D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF650/60R38 NRO 173D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF650/65R38 NRO 169D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF650/65R42 NRO 174D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF710/60R38 NRO 171D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF710/60R42 NRO 173D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF710/70R38 181D "
+    },
+    {
+        "Brand": "BKT",
+        "Pattern": "AGRIMAX V-FLECTO",
+        "Product": "VF900/60R42 NRO 189D"
+    }
+]

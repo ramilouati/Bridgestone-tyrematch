@@ -1,0 +1,1577 @@
+[
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "OPTITERRA",
+        "Product": "1000/50R25 172A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "OPTITERRA",
+        "Product": "1050/50R32 178A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial II",
+        "Product": "12.4R24 122A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT710",
+        "Product": "13.6R28  "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT710",
+        "Product": "14.9R24  "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "14.9R30 134A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "16.9R24 134A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "16.9R28 136A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "16.9R30 144A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT710",
+        "Product": "16.9R38  "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial II",
+        "Product": "18.4R26 140A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "18.4R26 140A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial II",
+        "Product": "18.4R26 152A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT710",
+        "Product": "18.4R30  "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial II",
+        "Product": "18.4R30 143A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT710",
+        "Product": "18.4R34  "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT710",
+        "Product": "18.4R38  "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "18.4R38 146A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "18.4R42 148A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "18.4R42 153A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "IT510",
+        "Product": "19.5LR24 152A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "20.8R38 153A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "All Weather Radial",
+        "Product": "23.1R26 153A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial II",
+        "Product": "23.1R26 156A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT900",
+        "Product": "230/95R32 140A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "250/90R38 132A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "250/95R34 119A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "250/95R50 137A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "250/95R54 141A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "28LR26 169A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "290/90R38 138A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "290/90R42 140A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT730",
+        "Product": "290/95R34 131A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "320/105R54 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "320/105R54 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "320/125R54 155A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "320/125R54 168A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT710",
+        "Product": "320/75R24 118A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "320/80R42 141A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "320/85R24 122A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "320/85R34 132D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "320/85R34 133A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "320/85R34 133A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "320/85R38 143A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "320/85R38 143A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "320/85R38 152A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "320/90R42 139A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "320/90R42 147A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "320/90R42 150A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "320/90R46 148A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "320/90R46 148A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "320/90R46 153A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "320/90R46 156A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "320/90R46 156A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "320/90R50 148A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "320/90R50 161A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "320/90R50 161A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "320/90R54 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "320/90R54 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "320/90R72.5 162A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "340/85R46 140A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "340/90R28 129A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "380/105R50 170A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "380/80R38 142A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "380/80R38 155A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "380/80R42 150A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "380/80R42 150A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "380/85R28 133A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "380/85R28 133A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "380/85R30 135A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "380/85R30 135A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "380/85R34 137A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "380/85R34 137A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "380/85R34 145A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "380/85R34 155A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "380/85R46 146D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "380/85R46 147A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "380/85R46 165A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "380/90R46 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "380/90R46 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "380/90R46 156A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "380/90R46 159A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "380/90R46 159A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "380/90R46 168A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "380/90R46 168A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "380/90R50 151A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "380/90R50 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "380/90R50 169A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "380/90R54 152A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "380/90R54 170A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "380/90R54 170A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "385/85R34 MPT 141G "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "420/70R24 130A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "420/80R46 151A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "420/80R46 159A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "420/80R46 170A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "420/85R26 138A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "420/85R28 139A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "420/85R28 139A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "420/85R28 139A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "420/85R34 147A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "420/85R34 147A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "420/85R38 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "420/90R30 142A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "420/90R30 142A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "420/90R30 142A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "420/90R30 147A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "420/95R50 157A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Versa Torque",
+        "Product": "440/80R28 140A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "460/85R30 145A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "480/70R30 152A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "480/70R30 152A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "480/70R34 146A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "480/70R34 146A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "480/70R34 146A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "480/70R34 155A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "480/70R34 155A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "480/70R34 155A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "All Weather Radial",
+        "Product": "480/80R26 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "480/80R38 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "480/80R38 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "480/80R38 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "All Weather Radial",
+        "Product": "480/80R38 152A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "480/80R38 155A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "All Weather Radial",
+        "Product": "480/80R38 164A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "480/80R42 151A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "480/80R42 151A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "480/80R42 151A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque Plus",
+        "Product": "480/80R42 151A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque Plus",
+        "Product": "480/80R42 154A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "480/80R42 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "480/80R46 158A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "480/80R46 158A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "480/80R46 158A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "480/80R46 158A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque Plus",
+        "Product": "480/80R46 158A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "480/80R46 168A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "480/80R46 174A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "480/80R50 159A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "480/80R50 159A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "480/80R50 165A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "480/80R50 176A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "480/85R26 145A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "480/85R30 147A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "480/85R30 156A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "480/85R34 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Versa Torque",
+        "Product": "480/85R34 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "480/95R50 164A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "480/95R54 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "IT520",
+        "Product": "500/70R24 157A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "IT530",
+        "Product": "500/70R24 157A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "IT520",
+        "Product": "500/85R24 171A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "IT525",
+        "Product": "500/85R24 171A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "520/70R38 150A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "520/85R38 148A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "520/85R38 155A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "520/85R38 155A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "520/85R38 155A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "520/85R38 170A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "520/85R42 157A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "520/85R42 157A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "520/85R42 157A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "520/85R42 157A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "520/85R42 162A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "520/85R42 162A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "520/85R42 162A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "520/85R42 162A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "520/85R42 165A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "520/85R42 170A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "520/85R46 158A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "520/85R46 158A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "520/85R46 169A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "520/85R46 169A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "520/85R50 165A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "540/65R24 146A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "540/65R30 150A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "540/65R34 152A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "IT530",
+        "Product": "540/70R24 161A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "540/75R34 157A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "All Weather Radial",
+        "Product": "580/70R26 149A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "All Weather Radial",
+        "Product": "580/70R26 155A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "All Weather Radial",
+        "Product": "580/70R26 160A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "580/85R42 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT924",
+        "Product": "600/65R28 147A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "600/65R28 154A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "600/65R28 154A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "600/65R28 160A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "600/70R28 161A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "600/70R30 152A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "600/70R30 152A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "620/70R42 160A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "620/70R42 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial HD",
+        "Product": "620/70R42 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial HD",
+        "Product": "620/70R42 172A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "620/70R46 162A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "620/70R46 167A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "620/70R46 167A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "620/70R46 176A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "620/75R26 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "620/75R26 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "620/75R30 163A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "620/75R30 169A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "620/75R34 170A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "650/65R38 166D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "650/65R42 170A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "650/75R32 172A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "650/75R32 172A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "650/75R34 162A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "650/75R38 169A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "650/85R38 173A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "650/85R38 173A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "650/85R42 174A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "710/65R26 169A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "710/70R38 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "710/70R38 166D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial HD",
+        "Product": "710/70R38 171A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "710/70R38 171D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "710/70R38 179A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "710/70R42 168A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "710/70R42 173A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial HD",
+        "Product": "710/70R42 173A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "710/70R42 179A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitorque",
+        "Product": "750/50R26 157D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitorque",
+        "Product": "750/50R26 165D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "750/65R26 166A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "800/65R32 172A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "800/65R32 172A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "800/65R32 175A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Dyna Torque Radial",
+        "Product": "800/65R32 178A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT924",
+        "Product": "800/70R38 173A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "800/70R38 173A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "800/70R38 173A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial HD",
+        "Product": "800/70R38 181A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "800/70R42 179A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "850/75R42 185A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "850/75R42 185A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "850/80R38 180A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "850/80R38 180A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "900/50R42 168A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "900/60R32 176A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "900/60R32 185A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "900/70R32 182A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "900/75R32 184A8 B"
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "IF320/105R54 167D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "IF320/105R54 167D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "IF320/80R42 149D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "IF320/90R42 157D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "IF320/90R46 159D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "IF320/90R50 161D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "IF320/90R54 162D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "IF380/105R50 177D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "IF380/80R38 149D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "IF380/80R38 161D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "IF380/80R42 163D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "IF380/90R42 154D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "IF380/90R46 168D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "IF380/90R50 166D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "IF380/90R50 170D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "IF380/90R54 171D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "IF480/80R50 178D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "IF480/95R54 167D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "IF520/85R42 CFO 169A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "IF520/85R42 CFO 169A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Torque",
+        "Product": "IF520/85R42 CFO 169A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "IF580/85R42 CFO 178A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "IF710/70R42 CFO 179A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "IF800/70R38 CFO 184A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "IF800/70R38 CFO 190A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Custom Flo Grip",
+        "Product": "IF850/60R26 CFO 179A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "IF850/60R26 CFO 179A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "IF850/75R42 CFO 186A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "IF900/60R32 CFO 188A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "IF900/65R32 CFO 185A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "IF900/65R32 CFO 191A8 "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW1000/40R32 167D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW1000/40R32 180D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT930",
+        "Product": "LSW1100/45R46 181D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Muck Master",
+        "Product": "LSW1100/45R46 190D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "MuckMaster",
+        "Product": "LSW1100/45R46 190D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "DT930",
+        "Product": "LSW1100/45R46 195D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW1250/35R46 195D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Muck Master",
+        "Product": "LSW1250/40R46 201D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "MuckMaster",
+        "Product": "LSW1250/40R46 201D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW1400/30R46 201D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "LSW380/65R42 149D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW420/75R34 150D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW420/75R38 157D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "LSW480/70R54 163D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "LSW480/70R54 181D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW520/75R46 166D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW520/75R46 175D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW580/75R46 172D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW580/75R46 180D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW650/60R42 168D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW650/70R46 181D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitorque",
+        "Product": "LSW680/55R42 171D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "LSW710/60R30 177D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW710/60R46 174D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW710/60R46 186D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW750/60R30 180D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Super Traction Radial",
+        "Product": "LSW800/50R42 180D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW800/55R46 178D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW800/55R46 190D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW850/55R30 186D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW900/50R46 181D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW900/50R46 191D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "LSW900/60R42 200D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "VF380/105R50 179D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "VF380/75R50 170D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Ultra Sprayer",
+        "Product": "VF380/90R46 173D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "VF380/95R38 154D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "VF600/70R28 CFO 173D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitorque",
+        "Product": "VF680/65R38 171D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Special Sure Grip TD8 Radial",
+        "Product": "VF710/65R26 177D "
+    },
+    {
+        "Brand": "GOODYEAR",
+        "Pattern": "Optitrac",
+        "Product": "VF750/65R26 177D"
+    }
+]
