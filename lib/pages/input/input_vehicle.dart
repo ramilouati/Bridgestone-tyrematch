@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 import 'package:dropdown_search/dropdown_search.dart';
 
@@ -28,7 +29,9 @@ class InputVehicle extends StatefulWidget {
 
 class _InputVehicleState extends State<InputVehicle> {
   var _inputVehicle = {};
-
+var selectionbrand=false;
+var selectionmodel=false;
+var modified = false;
   String value0;
   var selectBrand = '---';
   var selectModel = '---';
@@ -91,10 +94,29 @@ class _InputVehicleState extends State<InputVehicle> {
               ),
               onPressed: () async {
                 print("aliali" + image.toString());
+                if (_Axies1Controller.text == "") {
+                  _Axies1Controller.text = "_";
+                }
+                if (_Axies2Controller.text == "") {
+                  _Axies2Controller.text = "_";
+                }
+                   if (newbrand.text == "") {
+                  newbrand.text = "_";
+                }
+                    if (newmodel.text == "") {
+                  newmodel.text = "_";
+                }
+     if (Comments.text == "") {
+                  Comments.text = "_";
+                }
+
                 if (image.toString().contains("data")) {
                   _inputVehicle = {
                     "Brand": selectBrand.toString(),
                     "Model": selectModel.toString(),
+                    "New brand" : newbrand.text.toString(),
+                    "New model" : newmodel.text.toString(),
+
                     "Registration_plate": rpController.text,
                     "Number_axles": nbrAxiesController.text,
                     "w_axle1": _Axies1Controller.text,
@@ -106,15 +128,24 @@ class _InputVehicleState extends State<InputVehicle> {
                     "TyrePattern_R": dropdownValue4.toString(),
                     "TyreProduct_R": dropdownValue6.toString(),
                     "date_creation": getCurrentDate().toString(),
+                    "image_vehicle": "https://salesbridge.sharepoint.com/:i:/r/teams/BSEMIA-Tyrematch/Shared%20Documents/General/Tyrematch_reports/vehicle_"+rpController.text.toString()+".jpg",
+                                  "Comments": Comments.text.toString(),
+
+              
                   };
+if (modified==true) {
+  
 
                   Provider.of<downloadFileProvider>(context, listen: false)
                       .saveFileV(
                           _inputVehicle, "vehicle_${rpController.text}", image);
-                  print("eeeee" + image.toString());
+
+}
+
+                  log("eeeee" + _inputVehicle.toString());
                   Navigator.of(context).pop();
-                  Navigator.of(context)
-                      .pushReplacement(MaterialPageRoute(builder: (_) => Bend(force: 1)));
+                  Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (_) => Bend(force: 1)));
                 } else {
                   Navigator.of(context).pop();
 
@@ -137,8 +168,7 @@ class _InputVehicleState extends State<InputVehicle> {
     setState(() {
       catalogdata2 = json.decode(data);
     });
-    print("cat" + catalogdata2.length.toString());
-    print(catalogdata2[0]["Brand"].toString());
+  
     for (var i = 0; i < catalogdata2.length; i++) {
       print("ggggggggg" + catalogdata2[i]["Brand"].toString());
       p.add(catalogdata2[i]["Brand"].toString());
@@ -263,6 +293,8 @@ class _InputVehicleState extends State<InputVehicle> {
   final imagepicker = ImagePicker();
   PickedFile _imageFile;
   uploadImage() async {
+        modified=true;
+
     var pickedImage = await imagepicker.getImage(source: ImageSource.camera);
     if (pickedImage != null) {
       image = File(pickedImage.path);
@@ -275,6 +307,8 @@ class _InputVehicleState extends State<InputVehicle> {
   }
 
   uploadImage1() async {
+        modified=true;
+
     var pickedImage = await imagepicker.getImage(source: ImageSource.gallery);
     if (pickedImage != null) {
       image = File(pickedImage.path);
@@ -287,6 +321,7 @@ class _InputVehicleState extends State<InputVehicle> {
   }
 
   Widget bottomSheet(context) {
+    modified=true;
     return Container(
       height: 100.0,
       width: MediaQuery.of(context).size.width,
@@ -297,7 +332,7 @@ class _InputVehicleState extends State<InputVehicle> {
       child: Column(
         children: <Widget>[
           Text(
-            "Choose Profile photo",
+            "Add vehicle photo",
             style: TextStyle(
               fontSize: 20.0,
             ),
@@ -310,6 +345,7 @@ class _InputVehicleState extends State<InputVehicle> {
             ElevatedButton.icon(
               icon: Icon(Icons.camera),
               onPressed: () {
+                Navigator.pop(context);
                 uploadImage();
               },
               label: Text("Camera"),
@@ -318,6 +354,8 @@ class _InputVehicleState extends State<InputVehicle> {
             ElevatedButton.icon(
               icon: Icon(Icons.image),
               onPressed: () {
+                Navigator.pop(context);
+
                 uploadImage1();
               },
               label: Text("Gallery"),
@@ -331,9 +369,12 @@ class _InputVehicleState extends State<InputVehicle> {
 
   TextEditingController rpController = TextEditingController();
   TextEditingController nbrAxiesController = TextEditingController();
-  final TextEditingController _Axies1Controller = TextEditingController();
-  final TextEditingController _Axies2Controller = TextEditingController();
-  final TextEditingController _Axies3Controller = TextEditingController();
+  TextEditingController newbrand = TextEditingController();
+  TextEditingController newmodel = TextEditingController();
+  TextEditingController Comments = TextEditingController();
+
+   TextEditingController _Axies1Controller = TextEditingController();
+   TextEditingController _Axies2Controller = TextEditingController();
   List axies = [];
   Future<void> _showMyDialog(int i) async {
     return showDialog<void>(
@@ -355,6 +396,7 @@ class _InputVehicleState extends State<InputVehicle> {
                             Expanded(
                                 child: TextFormField(
                               controller: _Axies1Controller,
+                           //   initialValue: "0",
                               keyboardType: TextInputType.number,
                               decoration: InputDecoration(
                                 enabledBorder: OutlineInputBorder(
@@ -381,6 +423,7 @@ class _InputVehicleState extends State<InputVehicle> {
                             Expanded(
                                 child: TextFormField(
                               controller: _Axies2Controller,
+                             
                               keyboardType: TextInputType.number,
                               decoration: InputDecoration(
                                 enabledBorder: OutlineInputBorder(
@@ -438,6 +481,31 @@ class _InputVehicleState extends State<InputVehicle> {
 
   @override
   Widget build(BuildContext context) {
+print("dddd1998+1994"+selectBrand.toString()+"//"+selectModel.toString());
+
+if (selectBrand.toString()=="OTHER" && selectModel.toString()=="OTHER") {
+  selectionbrand=true;
+  selectionmodel=true;
+print("ramippppppp");
+}else{
+  selectionbrand=false;
+    selectionmodel=false;
+  //newbrand.clear();
+   
+
+
+}
+// if (selectBrand.toString()!="OTHER") {
+//   selectionbrand=false;
+//     selectionmodel=true;
+
+// }
+if (selectBrand.toString()!="OTHER"&& selectModel.toString()=="OTHER" ) {
+  selectionbrand=false;
+    selectionmodel=true;
+
+}
+
     if (v.length < 2) {
       loadData2(v);
     }
@@ -538,7 +606,14 @@ class _InputVehicleState extends State<InputVehicle> {
                                                   setState(() {
                                                     selectBrand = newValue1;
                                                     v1 = ['---'];
+
+
                                                     selectModel = '---';
+                                                    if (selectBrand.toString()=="OTHER") {
+  selectModel="OTHER";
+    
+
+}
                                                   });
 
                                                   loadData20(selectBrand, v1);
@@ -641,6 +716,123 @@ class _InputVehicleState extends State<InputVehicle> {
                                         ],
                                       ),
                                     ),
+                                    selectionbrand==true ?  Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          const Expanded(
+                                            child: Text(
+                                              'New Brand',
+                                              style: TextStyle(fontSize: 18),
+                                            ),
+                                          ),
+                                          Expanded(
+                                              flex: 1,
+                                              child: TextFormField(
+                                                enabled: selectionbrand,
+                                         
+                                                validator: (value) =>
+                                                    value == null ||
+                                                            value.isEmpty
+                                                        ? 'Required'
+                                                        : null,
+                                                controller: newbrand,
+                                                decoration: InputDecoration(
+                                                  hintText:
+                                                      "Please specify the new Brand ",
+                                                  hintStyle: TextStyle(fontSize: 12,overflow: TextOverflow.ellipsis),
+                                                  isDense: true,
+                                                  contentPadding:
+                                                      const EdgeInsets
+                                                              .symmetric(
+                                                          horizontal: 5,
+                                                          vertical: 10.0),
+                                                  enabledBorder:
+                                                      OutlineInputBorder(
+                                                    borderSide:
+                                                        const BorderSide(
+                                                            width: 1),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                  ),
+                                                  border: OutlineInputBorder(
+                                                    borderSide:
+                                                        const BorderSide(
+                                                            width: 1),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                  ),
+                                                  filled: true,
+                                                  fillColor: Colors.white,
+                                                ),
+                                              ))
+                                        ],
+                                      ),
+                                    ):Container(),
+                                       selectionmodel==true ? 
+                                        Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          const Expanded(
+                                            child: Text(
+                                              'New Model',
+                                              style: TextStyle(fontSize: 18),
+                                            ),
+                                          ),
+                                          Expanded(
+                                              flex: 1,
+                                              child: TextFormField(
+                                                enabled: selectionmodel,
+                                         
+                                                validator: (value) =>
+                                                    value == null ||
+                                                            value.isEmpty
+                                                        ? 'Required'
+                                                        : null,
+                                                controller: newmodel,
+                                                decoration: InputDecoration(
+                                                  hintText:
+                                                      "Please specify the new model",
+                                                  hintStyle: TextStyle(fontSize: 12,overflow: TextOverflow.ellipsis),
+                                                  isDense: true,
+                                                  contentPadding:
+                                                      const EdgeInsets
+                                                              .symmetric(
+                                                          horizontal: 5,
+                                                          vertical: 10.0),
+                                                  enabledBorder:
+                                                      OutlineInputBorder(
+                                                    borderSide:
+                                                        const BorderSide(
+                                                            width: 1),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                  ),
+                                                  border: OutlineInputBorder(
+                                                    borderSide:
+                                                        const BorderSide(
+                                                            width: 1),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                  ),
+                                                  filled: true,
+                                                  fillColor: Colors.white,
+                                                ),
+                                              ))
+                                        ],
+                                      ),
+                                    ):Container(),
                                     Padding(
                                       padding: const EdgeInsets.symmetric(
                                           horizontal: 20, vertical: 10),
@@ -715,6 +907,64 @@ class _InputVehicleState extends State<InputVehicle> {
                                                 keyboardType:
                                                     TextInputType.number,
                                                 controller: nbrAxiesController,
+                                                decoration: InputDecoration(
+                                                  isDense: true,
+                                                  contentPadding:
+                                                      const EdgeInsets
+                                                              .symmetric(
+                                                          horizontal: 5,
+                                                          vertical: 10.0),
+                                                  enabledBorder:
+                                                      OutlineInputBorder(
+                                                    borderSide:
+                                                        const BorderSide(
+                                                            width: 1),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                  ),
+                                                  border: OutlineInputBorder(
+                                                    borderSide:
+                                                        const BorderSide(
+                                                            width: 1),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                  ),
+                                                  filled: true,
+                                                  fillColor: Colors.white,
+                                                ),
+                                              ))
+                                        ],
+                                      ),
+                                    ),
+                                      Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          const Expanded(
+                                            child: Text(
+                                              'Comments',
+                                              style: TextStyle(fontSize: 18),
+                                            ),
+                                          ),
+                                          Expanded(
+                                              flex: 1,
+                                              child: TextFormField(
+                                                
+                                                validator: (value) =>
+                                                    value == null ||
+                                                            value.isEmpty
+                                                        ? 'Required'
+                                                        : null,
+                                                  maxLines: 4,
+
+                                                keyboardType:
+                                                    TextInputType.text,
+                                                controller: Comments,
                                                 decoration: InputDecoration(
                                                   isDense: true,
                                                   contentPadding:

@@ -330,8 +330,7 @@ class _TyreInspectionBodyState extends State<TyreInspectionBody> {
                       "Slip": "N/A",
                       "Difference": "N/A",
                       "Ratio": "N/A",
-                      "Distance A": "N/A",
-                      "Distance B": "N/A"
+           
                     };
                     var tyrematchjson = {
                       "TM_Inspection_id": "N/A",
@@ -341,10 +340,12 @@ class _TyreInspectionBodyState extends State<TyreInspectionBody> {
                       "RS1 B": "N/A",
                       "RS2 B": "N/A",
                       "Distance_mode": "N/A",
+                      "Distance A": "N/A",
+                      "Distance B": "N/A",
                       "AtmPresure": "N/A",
                       "Temperature": "N/A",
                       "Air_moisture": "N/A",
-                      "Test_counter": "N/A",
+                      "Menu_number": "N/A",
                     };
                     DateTime now = DateTime.now();
                     String formattedDate =
@@ -382,6 +383,16 @@ class _TyreInspectionBodyState extends State<TyreInspectionBody> {
                     Provider.of<downloadFileProvider>(context, listen: false)
                         .setTyrematch(tyrematchjson);
                   }
+
+
+                        var FL = Provider.of<downloadFileProvider>(context, listen: false)
+                        .ischaked1;
+                        var RL = Provider.of<downloadFileProvider>(context, listen: false)
+                        .ischaked2;
+                        var FR = Provider.of<downloadFileProvider>(context, listen: false)
+                        .ischaked3;
+                        var RR = Provider.of<downloadFileProvider>(context, listen: false)
+                        .ischaked4;
                   setState(() {
                     tyreInspection = {
                       "date_inspection": "${_dateController.text}",
@@ -390,42 +401,52 @@ class _TyreInspectionBodyState extends State<TyreInspectionBody> {
                       "RTD-RL": "${_rtdTwoController.text}",
                       "RTD-FR": "${_rtdTreeController.text}",
                       "RTD-RR": "${_rtdFourController.text}",
-                      "Ip-FL": "${_ipOneController.text}",
+                      "IP-FL": "${_ipOneController.text}",
                       "IP-RL": "${_ipTwoController.text}",
                       "IP-FR": "${_ipThreeController.text}",
                       "IP-RR": "${_ipFourController.text}",
-                      "Type-Damage-FL":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).id_damage1}",
-                      "Type-Damage-RL":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).id_damage2}",
-                      "Type-Damage-FR":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).id_damage3}",
-                      "Type-Damage-RR":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).id_damage4}",
-                      "Comments-damage-FL":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).commentsDamage1Controller.text}",
-                      "Comments-damage-RL":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).commentsDamage2Controller.text}",
-                      "Comments-damage-FR":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).commentsDamage3Controller.text}",
-                      "Comments-damage-RR":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).commentsDamage4Controller.text}",
-                      "Serial-number-FL":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).serial1Controller.text}",
-                      "Serial-number-RL":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).serial2Controller.text}",
-                      "Serial-number-FR":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).serial3Controller.text}",
-                      "Serial-number-RR":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).serial4Controller.text}",
-                      "Fitting-hours-FL":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).fettinghour1Controller.text}",
-                      "Fitting-hours-RL":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).fettinghour2Controller.text}",
-                      "Fitting-hours-FR":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).fettinghour3Controller.text}",
-                      "Fitting-hours-RR":
-                          "${Provider.of<downloadFileProvider>(context, listen: false).fettinghour4Controller.text}",
+                      "Type-Damage-FL":Provider.of<downloadFileProvider>(context, listen: false).id_damage1 != ""&& FL==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).id_damage1}":"_",
+
+                      "Type-Damage-RL":Provider.of<downloadFileProvider>(context, listen: false).id_damage2!= ""&& RL==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).id_damage2}":"_",
+
+                      "Type-Damage-FR":Provider.of<downloadFileProvider>(context, listen: false).id_damage3!= ""&& FR==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).id_damage3}":"_",
+
+                      "Type-Damage-RR":Provider.of<downloadFileProvider>(context, listen: false).id_damage4!= ""&& RR==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).id_damage4}":"_",
+
+                      "Comments-damage-FL":Provider.of<downloadFileProvider>(context, listen: false).commentsDamage1Controller.text!= ""&& FL==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).commentsDamage1Controller.text}":"_",
+
+                      "Comments-damage-RL":Provider.of<downloadFileProvider>(context, listen: false).commentsDamage2Controller.text!= ""&& RL==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).commentsDamage2Controller.text}":"_",
+
+                      "Comments-damage-FR":Provider.of<downloadFileProvider>(context, listen: false).commentsDamage3Controller.text!= ""&& FR==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).commentsDamage3Controller.text}":"_",
+
+                      "Comments-damage-RR":Provider.of<downloadFileProvider>(context, listen: false).commentsDamage4Controller.text!= ""&& RR==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).commentsDamage4Controller.text}":"_",
+
+                      "Serial-number-FL":Provider.of<downloadFileProvider>(context, listen: false).serial1Controller.text!= ""&& FL==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).serial1Controller.text}":"_",
+
+                      "Serial-number-RL":Provider.of<downloadFileProvider>(context, listen: false).serial2Controller.text!= ""&& RL==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).serial2Controller.text}":"_",
+
+                      "Serial-number-FR":Provider.of<downloadFileProvider>(context, listen: false).serial3Controller.text!= ""&& FR==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).serial3Controller.text}":"_",
+                      "Serial-number-RR":Provider.of<downloadFileProvider>(context, listen: false).serial4Controller.text!= ""&& RR==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).serial4Controller.text}":"_",
+                      "Fitting-hours-FL":Provider.of<downloadFileProvider>(context, listen: false).fettinghour1Controller.text!= ""&& FL==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).fettinghour1Controller.text}":"_",
+                      "Fitting-hours-RL":Provider.of<downloadFileProvider>(context, listen: false).fettinghour2Controller.text!= ""&& RL==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).fettinghour2Controller.text}":"_",
+                      "Fitting-hours-FR":Provider.of<downloadFileProvider>(context, listen: false).fettinghour3Controller.text!= ""&& FR==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).fettinghour3Controller.text}":"_",
+                      "Fitting-hours-RR":Provider.of<downloadFileProvider>(context, listen: false).fettinghour4Controller.text!= ""&& RR==true?
+                          "${Provider.of<downloadFileProvider>(context, listen: false).fettinghour4Controller.text}":"_",
                     };
                   });
                   Provider.of<downloadFileProvider>(context, listen: false)

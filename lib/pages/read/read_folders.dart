@@ -1,3 +1,6 @@
+import 'dart:developer';
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_blue_app/pages/read/read_files.dart';
 import 'package:get/get.dart';
@@ -17,7 +20,7 @@ class ReadFolders extends StatefulWidget {
 
 class _ReadFoldersState extends State<ReadFolders> {
   DateTime know = DateTime.now();
-  String formattedDate;
+ String formattedDate;
 
   var folders = [];
   var selected = [];
@@ -30,7 +33,7 @@ class _ReadFoldersState extends State<ReadFolders> {
         Provider.of<downloadFileProvider>(context, listen: false)
             .fctListFolders());
 
-    formattedDate = DateFormat('dd-MM-yyyy–kk-mm').format(know);
+    formattedDate = DateFormat('yyyy-MM-dddd–kk-mm').format(know);
     super.initState();
   }
 
@@ -52,61 +55,18 @@ class _ReadFoldersState extends State<ReadFolders> {
 
     folders =
         Provider.of<downloadFileProvider>(context, listen: true).listFolders;
-    folders.sort((a, b) => b.toString().compareTo(a.toString()));
+
+    print(folders);
+
+     folders.sort((a, b) => b.statSync().modified.toString().compareTo(a.statSync().modified.toString()));
     folders.removeWhere((element) => element.toString().contains("user"));
-    folders
-        .removeWhere((element) => element.toString().contains("compilation"));
+
     folders.removeWhere((element) => element.toString().contains("vehicle"));
-    folders.removeWhere((element) => element.toString().contains("zip"));
+    log("pop"+folders.toString());
+
 
     return Scaffold(
-        // appBar: AppBar(
-        //   title: Text("List of inspections "),
-        //   backgroundColor: Colors.black,
-        //   actions: [
-        //     selected.isNotEmpty
-        //         ? IconButton(
-        //             icon: Icon(
-        //               Icons.send_and_archive,
-        //               color: Colors.white,
-        //             ),
-        //             onPressed: () async {
-        //               var result = " ";
-        //               for (var i = 0; i < selected.length; i++) {
-        //                 result += await File(selected[i] + "/Final report.json")
-        //                     .readAsString();
-        //               }
-        //               print(result.toString());
-        //               var d = await Directory(
-        //                       "/storage/7E26-D83B/bridge/compilation" +
-        //                           formattedDate.toString())
-        //                   .create();
-        //               await File("/storage/7E26-D83B/bridge/compilation" +
-        //                       formattedDate.toString() +
-        //                       "/all.json")
-        //                   .writeAsString(result.toString());
-        //               final zipFile = File(d.path + "_file.zip");
-        //               var c4 = ZipFile.createFromDirectory(
-        //                   sourceDir: d, zipFile: zipFile, recurseSubDirs: true);
-        //               final Email send_email = Email(
-        //                 body: 'your inspection is compressed',
-        //                 subject: 'Inspection tyrematch',
-        //                 recipients: [
-        //                   'AG projects - Bridgestone <147c67b5.xflowdata.com@emea.teams.ms>'
-        //                 ],
-        //                 attachmentPaths: [d.path + "_file.zip"],
-        //                 isHTML: false,
-        //               );
-
-        //               await FlutterEmailSender.send(send_email);
-        //               await File(d.path + "_file.zip").delete();
-        //               await Directory(d.path).delete();
-        //               Navigator.pop(context);
-        //             },
-        //           )
-        //         : Icon(Icons.select_all)
-        //   ],
-        // ),
+     
         body: SafeArea(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -151,10 +111,12 @@ class _ReadFoldersState extends State<ReadFolders> {
             ],
           ),
           folders.isEmpty
-              ? Container(
-                  child: Center(
-                  child: Text("empty"),
-                ))
+              ?Center(
+                          child: Text(
+                          "Empty",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(fontSize: 25),
+                        ))
               : Expanded(
                   child: ListView.builder(
                       shrinkWrap: true,
@@ -191,7 +153,8 @@ class _ReadFoldersState extends State<ReadFolders> {
                               }
                             },
                             onTap: () async {
-                              // print("tst :$test");
+                               print("tst :$test");
+                               print("tst :${folders[index]}");
                               Navigator.of(context).push(MaterialPageRoute(
                                   builder: (_) => ReadFiles(
                                         path: (folders[index]),

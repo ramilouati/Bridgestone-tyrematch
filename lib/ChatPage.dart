@@ -1,6 +1,8 @@
 // ignore_for_file: unnecessary_statements
+import 'dart:developer';
 
 import 'dart:async';
+import 'dart:math';
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -32,12 +34,12 @@ class _ChatPage extends State<ChatPage> {
 
   List<_Message> messages = [];
   String _messageBuffer = '';
-
+  var op = 0;
   final TextEditingController textEditingController =
       new TextEditingController();
   final ScrollController listScrollController = new ScrollController();
   var dt = DateTime.now();
-
+  int cnt = 0;
   bool isConnecting = true;
   bool get isConnected => connection != null && connection.isConnected;
   List test = [];
@@ -48,16 +50,17 @@ class _ChatPage extends State<ChatPage> {
   List duplicateList = [];
   List indexList = [];
   List iar = [];
+
   test1() {
     var errorMsg;
     var testchaine;
     error = [];
     for (var i in test) {
       if (i != null) {
-        if (i.length < 15) {}
         errorMsg = i;
         testchaine = i.split(RegExp(r"\s+|,\s+"));
-        if (testchaine.length < 16) {
+        //erreur-comment
+        if (testchaine.length < 15) {
           error.add(errorMsg);
         }
       }
@@ -72,63 +75,108 @@ class _ChatPage extends State<ChatPage> {
   calcule(String j) {
     List test;
     var iar;
+    var iar1;
+    var iar2;
+var iar3;
     var name;
     test = j.split(",");
     if (test[0] == "") {
       test.removeAt(0);
     }
 
-    if (test[1].toString().contains("&5")) {
-      iar = (double.parse(test[3 - 1]) / double.parse(test[5 - 1]));
-      name = "IAR :";
-    }
-    if (test[1].toString().contains("&1") ||
-        test[1].toString().contains("&4")) {
-      iar = (double.parse(test[4 - 1]) / double.parse(test[6 - 1]));
-      name = "IAR :";
+
+
+    if (test[1].toString().contains("&1")) {
+      iar = ((((double.parse(test[4 - 1]) / double.parse(test[6 - 1])) /
+                  (double.parse(test[3 - 1]) / double.parse(test[5 - 1]))) -
+              1) *
+          100);
+                    iar =iar.toStringAsFixed(2);
+
+     // iar = (double.parse(test[4 - 1]) / double.parse(test[6 - 1]));
+      name = "Lead %:";
     }
     if (test[1].toString().contains("&2")) {
-      name = "Slip % :";
-      var f1 = (((double.parse(test[3 - 1]) / 4096) +
-              (double.parse(test[5 - 1]) / 4096)) /
-          2);
-      print("#" + f1.toString());
-      var da = ((double.parse(test[8 - 1]) / f1));
-      print("#" + da.toString());
+      var da1100 = int.parse(test[7].toString());
+      var db1100 = int.parse(test[8].toString());
+       var da200 = da1100 / 100;
+       var db200 = db1100 / 100;
 
-      var f2 = (((double.parse(test[4 - 1]) / 4096) +
-              (double.parse(test[6 - 1]) / 4096)) /
+
+
+print("testt787"+test.toString());
+      name = "\n Distance A: ${da200} \n Distance B: ${db200} \n Slip % :";
+      var f1 = (((double.parse(test[4 - 1]) / 4096) +
+              (double.parse(test[6 - 1]) / 4096)) /2);
+      print("# 1" + f1.toString());
+      var da = ((double.parse(test[9 - 1]) / f1));
+      print("# 2" + da.toString());
+
+      var f2 = (((double.parse(test[3 - 1]) / 4096) +
+              (double.parse(test[5 - 1]) / 4096)) /
           2);
       print("#" + f2.toString());
 
-      var db = ((double.parse(test[9 - 1]) / f2));
+      var db = ((double.parse(test[8 - 1]) / f2));
       print("#" + db.toString());
 
-      var iar1 = ((1 - (db / da)) * 100);
-      iar = iar1;
+      var iar1 = ((1 - (da / db)) * 100);
+      iar = iar1.toStringAsFixed(0);
     }
     if (test[1].toString().contains("&3")) {
-      name = "Axle diffrence :";
+
+        var v1 = ((double.parse(test[3 - 1]) / 4096)).toStringAsFixed(3);
+        var v2 = ((double.parse(test[5 - 1]) / 4096)).toStringAsFixed(3);
+        var v3 = v1.toString() + " \nRight : " + v2.toString();
+
+      name = "\nLeft : "+v3+
+      
+      "\nAxle diffrence :";
       iar = ((double.parse(test[3 - 1]) / 4096) -
           (double.parse(test[5 - 1]) / 4096));
+          iar =iar.toStringAsFixed(3);
+    }
+
+        if (test[1].toString().contains("&4")) {
+      iar1 = ((double.parse(test[8 - 1]) * 10) /
+          (double.parse(test[3 - 1]) / 4096));
+      iar2 = ((double.parse(test[8 - 1]) * 10) /
+          (double.parse(test[5 - 1]) / 4096));
+ iar3 = ((((double.parse(test[4 - 1]) / double.parse(test[6 - 1])) /
+                  (double.parse(test[3 - 1]) / double.parse(test[5 - 1]))) -
+              1) *
+          100);
+      iar = (double.parse(test[4 - 1]) / double.parse(test[6 - 1]));
+                iar =iar.toStringAsFixed(4);
+
+      name = "\n RC F : " +
+          iar1.toStringAsFixed(0) +
+          " \n RC R : " +
+          iar2.toStringAsFixed(0) +
+          " \n LEAD % : "+
+          iar3.toStringAsFixed(2) +
+          " \n IAR  : ";
+    }
+    if (test[1].toString().contains("&5")) {
+      iar = (double.parse(test[3 - 1]) / double.parse(test[5 - 1]));
+      name = "IAR :";
+      iar=iar.toStringAsFixed(4);
     }
     var yy = test[14];
     var tt = yy[1];
-    return "M[${test[1].toString().substring(2, 3)}]   $name  ${iar.toStringAsFixed(3)}";
+    return "M[${test[1].toString().substring(2, 3)}]   $name ${iar}";
   }
 
   duplicate() async {
     test = messages.map((e) {
-      try {
+   
         if ('#'.allMatches(e.text).length > 1) {
           print('#'.allMatches(e.text).length);
           int a1 = e.text.indexOf("#");
 
           var g = e.text.substring(0, a1 + 1).trim();
           var g1 = e.text.substring(a1 + 2).trim();
-          print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa || $a1");
-          print("111111111111111111111111 || $g");
-          print("objectobjectobjectobjectobjectobjectobject || $g1");
+
           messages.removeWhere(
               (element) => element.text.toUpperCase().contains("BT SAY"));
           messages.removeWhere(
@@ -138,22 +186,23 @@ class _ChatPage extends State<ChatPage> {
           messages.add(_Message(e.whom, g.toString()));
           messages.add(_Message(e.whom, g1.toString()));
         }
-      } on Exception catch (e) {
-        print("objectobjectobject $e");
-      }
+   
 
-      if (test.length == 6) {
-        print("rigeda7 = true;");
-        timer?.cancel();
-
-        rigeda7 = true;
-      }
       if (!e.text.toString().toUpperCase().contains("BT SAY") &&
           !e.text.toString().toUpperCase().contains("BT DONE!") &&
           e.text.toString().isNotEmpty) {
         return e.text.toString().trim();
       }
+      print("score--test"+test.length.toString());
+      print("score--messages"+messages.length.toString());
+      if (test.length >= 6 ) {
+        rigeda7 = true;
+        timer?.cancel();
+
+      }
     }).toList();
+    
+    
     test.remove(null);
     test = test.toSet().toList();
 
@@ -191,10 +240,13 @@ class _ChatPage extends State<ChatPage> {
                           width: 240.0,
                           decoration: BoxDecoration(
                               color:
-                                  16 < three.length ? Colors.red : Colors.grey,
+
+                                  //erreur-comment
+                                  16 != three.length ? Colors.red : Colors.grey,
                               borderRadius: BorderRadius.circular(7.0)),
                         ),
-                        16 < three.length
+                        //erreur-comment
+                        16 != three.length
                             ? Text(
                                 'Wrong message',
                                 style: TextStyle(color: Colors.red),
@@ -208,20 +260,27 @@ class _ChatPage extends State<ChatPage> {
                       height: 40,
                       child: InkWell(
                           onTap: () {
-                            print("rami" + timer.toString());
                             setState(() {
                               messages.removeWhere((item) =>
                                   item.text.toString().trim() ==
                                   test[index].toString().trim());
+
+                              test.removeAt(index);
                             });
-                            setState(() {
+                           // setState(() {
                               rigeda7 = false;
-                            });
-                            timer =
-                                Timer.periodic(Duration(milliseconds: 1), (_) {
-                              duplicate();
-                              test1();
-                            });
+                              if (test.length<6) {
+                                      timer.isActive?null: timer = Timer.periodic(Duration(microseconds: 500),
+                                  (_) {
+                                duplicate();
+                                test1();
+                              });
+                              }
+                       
+                           // });
+
+                            print("ùùùùùùùùùùùùùùùùùùùùùùùùù" +
+                                test.length.toString());
                           },
                           child: Image.asset("assets/images/delete.png")),
                     ),
@@ -242,11 +301,13 @@ class _ChatPage extends State<ChatPage> {
     super.initState();
     n1 = Provider.of<downloadFileProvider>(context, listen: false).name;
     rigeda7 = false;
-
-    timer = Timer.periodic(Duration(seconds: 1), (_) {
+if (test.length<6) {
+     timer = Timer.periodic(Duration(microseconds: 500), (_) {
       duplicate();
       test1();
     });
+}
+ 
 
     Future<bool> _requestPermission(Permission permission) async {
       if (await permission.isGranted) {
@@ -339,6 +400,8 @@ class _ChatPage extends State<ChatPage> {
                                         c1: widget.color,
                                         c2: widget.c2,
                                         n1: n1)));
+
+                                        timer?.cancel();
                           })),
                   SizedBox(
                     width: 4,
@@ -367,7 +430,8 @@ class _ChatPage extends State<ChatPage> {
         false;
   }
 
-  void showAlert(BuildContext context) {
+  Future<void> showAlert(BuildContext context) async {
+    timer?.cancel();
     var _isVisible = true;
     if (!test.contains(null)) {
       if (test.length >= 1 && error.isEmpty) {
@@ -378,7 +442,7 @@ class _ChatPage extends State<ChatPage> {
         _isVisible = true;
       }
     }
-    showDialog(
+    showDialog <void>(
         context: context,
         builder: (context) => AlertDialog(
               content: Container(
@@ -425,7 +489,14 @@ class _ChatPage extends State<ChatPage> {
                         elevation: 0,
                       ),
                       onPressed: () {
-                        Navigator.of(context).pop();
+                        setState(() {
+                          rigeda7 = false;
+                        });
+                        for (var i = 0; i < op + 1; i++) {
+                          Navigator.of(context).pop();
+                          op = op - 1;
+                          print("oooopppp" + op.toString());
+                        }
                       },
                       child: Text("Back",
                           style: TextStyle(
@@ -441,6 +512,9 @@ class _ChatPage extends State<ChatPage> {
 
   @override
   Widget build(BuildContext context) {
+    // if (rigeda7== false && test.length<6) {
+      
+    // }
     var _isVisible = false;
     if (!test.contains(null)) {
       if (test.length >= 1 && error.isEmpty) {
@@ -452,58 +526,23 @@ class _ChatPage extends State<ChatPage> {
       }
     }
     if (test.indexOf(null) != -1) test.removeAt(test.indexOf(null));
-
-    if (rigeda7 == true)
+    print("open oooooooooooooooooooooooooooooooooooooooooo||" +
+        cnt.toString() +
+        "|" +
+        rigeda7.toString());
+    if (rigeda7 == true && cnt == 0) {
+      print("open dialogggggggggggggggggggggg||" + cnt.toString());
+      op = op + 1;
+      print("1455");
+      timer?.cancel();
       Future.delayed(Duration.zero, () => showAlert(context));
-    // final List<Row> list = messages.asMap().entries.map((_message) {
-    //   print("---------------------------- $_message");
-    //   print("_message.value :${_message.key} || ${_message.value.text}");
-    //   return Row(
-    //     children: <Widget>[
-    //       Container(
-    //         child: Text(
-    //             (text) {
-    //               return text == '/shrug' ? '¯\\_(ツ)_/¯' : text;
-    //             }(_message.value.text.trim()),
-    //             style: TextStyle(color: Colors.white)),
-    //         padding: EdgeInsets.all(12.0),
-    //         margin: EdgeInsets.only(bottom: 8.0, left: 8.0, right: 2.0),
-    //         width: 240.0,
-    //         decoration: BoxDecoration(
-    //             color: _message.value.whom == clientID
-    //                 ? Colors.blueAccent
-    //                 : Colors.grey,
-    //             borderRadius: BorderRadius.circular(7.0)),
-    //       ),
-    //       /*   ElevatedButton(
-    //           onPressed: () => Navigator.push(
-    //                 context,
-    //                 // MaterialPageRoute(builder: (context) =>  Test(title: _message.text.trim(),)),
-    //                 MaterialPageRoute(
-    //                     builder: (context) => Slidepage(
-    //                           title: messages,
-    //                         )),
-    //               ),
-    //           child: Text('Click')),*/
-    //       SizedBox(
-    //         width: 10,
-    //       ),
-    //       ElevatedButton.icon(
-    //           onPressed: () {
-    //             messages.removeAt(_message.key);
-    //             setState(() {
-    //               messages;
-    //             });
-    //           },
-    //           icon: Icon(Icons.delete),
-    //           label: Text(''))
-    //     ],
-    //     mainAxisAlignment: _message.value.whom == clientID
-    //         ? MainAxisAlignment.end
-    //         : MainAxisAlignment.start,
-    //   );
-    // }).toList();
+      rigeda7 == true;
+    }
+
+
     test.remove(null);
+ 
+
     double h = MediaQuery.of(context).size.height;
     return Center(
         child: AnnotatedRegion<SystemUiOverlayStyle>(

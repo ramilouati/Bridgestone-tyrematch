@@ -76,8 +76,23 @@ class _HomeState extends State<Home> {
                       context: context,
                       builder: (BuildContext context) {
                         return AlertDialog(
-                          title: Text("Tyre match"),
-                          content: Text("Version : 1.0.05"),
+                          title: Row(
+                            children: [
+                              Image.asset("assets/images/BS.jpg",width: 100,height: 25,),
+                              Text(""),
+                            ],
+                          ),
+                          content: Container(
+                            height: 130,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text("Version : 1.0.13",style: TextStyle(fontSize: 25)),
+                                SizedBox(height: 10,),
+                                Text("© 2023 Bridgestone All Rights Reserved",style: TextStyle(fontSize: 15),)
+                              ],
+                            ),
+                          ),
                         );
                       });
                 },

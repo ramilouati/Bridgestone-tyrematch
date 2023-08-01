@@ -1,5 +1,63 @@
  [
     {
+        "Brand": "OTHER",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "MF",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "CASE",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "FENDT",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "JD",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "KU",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "NH",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "STEYR",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "VALTRA",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "CLAAS",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "DF",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "LA",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "SA",
+        "Model": "OTHER"
+    },
+    {
+        "Brand": "KI",
+        "Model": "OTHER"
+    },
+
+
+    {
         "Brand": "MF",
         "Model": "4700"
     },

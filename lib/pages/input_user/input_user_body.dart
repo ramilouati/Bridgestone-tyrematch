@@ -99,7 +99,7 @@ class _InputUserBodyState extends State<InputUserBody> {
         }
 
         if (!androidInfo.manufacturer.toString().contains("HUAWEI")) {
-          if (await _requestPermission(Permission.storage) &&
+          if (await _requestPermission(Permission.storage) ||
               // access media location needed for android 10/Q
               await _requestPermission(Permission.accessMediaLocation) &&
               // manage external storage needed for android 11/R
@@ -177,7 +177,7 @@ class _InputUserBodyState extends State<InputUserBody> {
                           .push(MaterialPageRoute(builder: (_) => Home()));
                     },
                     child: Text(
-                      'Continue as  ${prefs40.toString()} ${prefs41.toString()}',
+                      'Continue as ${prefs40.toString()} ${prefs41.toString()}',
                       style: TextStyle(
                         fontSize: 25,
                         fontWeight: FontWeight.bold,

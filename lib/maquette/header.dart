@@ -102,7 +102,11 @@ class _HeaderState extends State<Header> {
                   child: InkWell(
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (_) => ModifVehicle(
+                            builder: (_) => ModifVehicle(Image:Provider.of<downloadFileProvider>(context,
+                                      listen: false)
+                                  .vehicleimagepath
+                                  .toString() +
+                              "/vehicle_${widget.details}.jpg",
                                 data: widget.data, Details: widget.details)));
                       },
                       child: Text(

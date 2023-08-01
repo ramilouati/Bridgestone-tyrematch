@@ -1,11 +1,13 @@
 // ignore_for_file: unused_local_variable
 
 import 'dart:convert';
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_blue_app/pages/search_vehicle.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -13,13 +15,16 @@ import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
 
 import '../../provider/download_file_provider.dart';
+import '../read/bend.dart';
 
 class ModifVehicle extends StatefulWidget {
   var BL;
   var vehicle;
   var data;
   var Details;
-  ModifVehicle({Key key, this.BL, this.vehicle, this.data, this.Details})
+    var Image;
+
+  ModifVehicle({Key key, this.BL, this.vehicle, this.data, this.Details,this.Image})
       : super(key: key);
 
   @override
@@ -28,8 +33,11 @@ class ModifVehicle extends StatefulWidget {
 
 class _ModifVehicleState extends State<ModifVehicle> {
   var _inputVehicle = {};
+var selectionbrand=false;
+var selectionmodel=false;
   var selectBrand;
   var selectModel;
+  var Comment;
   PageController page = PageController(initialPage: 0);
   int pageIndex = 0;
   //String formattedDate = DateFormat('dd-MM-yyyy–kk-mm').format(know);
@@ -42,6 +50,8 @@ class _ModifVehicleState extends State<ModifVehicle> {
   String dropdownValue5;
   String dropdownValue6;
   bool dual1;
+    File image;
+
   bool dual2;
   List catalogdata;
   List catalogdata2;
@@ -56,21 +66,25 @@ class _ModifVehicleState extends State<ModifVehicle> {
   @override
   void initState() {
     widget.data.forEach((k, v) => l.add(Veh(k, v)));
-    print("8888" + l[0].value.toString());
+    log("8888" + widget.data.toString());
     super.initState();
     selectBrand = l[0].value.toString();
     selectModel = l[1].value.toString();
-    rpController.text = l[2].value.toString();
-    nbrAxiesController.text = l[3].value.toString();
-    _Axies1Controller.text = l[4].value.toString();
-    _Axies2Controller.text = l[5].value.toString();
-    _Axies3Controller.text = l[6].value.toString();
-    dropdownValue1 = l[6].value.toString();
-    dropdownValue2 = l[9].value.toString();
-    dropdownValue3 = l[7].value.toString();
-    dropdownValue4 = l[10].value.toString();
-    dropdownValue5 = l[8].value.toString();
-    dropdownValue6 = l[11].value.toString();
+        newbrand.text = l[2].value.toString();
+        newmodel.text = l[3].value.toString();
+
+    rpController.text = l[4].value.toString();
+    nbrAxiesController.text = l[5].value.toString();
+    _Axies1Controller.text = l[6].value.toString();
+    _Axies2Controller.text = l[7].value.toString();
+    dropdownValue1 = l[8].value.toString();
+    dropdownValue3 = l[9].value.toString();
+    dropdownValue5 = l[10].value.toString();
+
+    dropdownValue2 = l[11].value.toString();
+    dropdownValue4 = l[12].value.toString();
+    dropdownValue6 = l[13].value.toString();
+    Comments.text = l[16].value.toString();
     print(",,,," + l.toString());
     print("dropdownValue1" + dropdownValue1.toString());
     print("dropdownValue1" + dropdownValue2.toString());
@@ -82,6 +96,9 @@ class _ModifVehicleState extends State<ModifVehicle> {
     print("dropdownValue1" + dropdownValue5.toString());
 
     print("dropdownValue1" + dropdownValue6.toString());
+    image=File(widget.Image.toString());
+        image=File(widget.Image.toString());
+
   }
 
   modif() {}
@@ -95,7 +112,6 @@ class _ModifVehicleState extends State<ModifVehicle> {
   bool active = false;
   final formKey = GlobalKey<FormState>();
 
-  File image;
   final imagepicker = ImagePicker();
   PickedFile _imageFile;
   uploadImage() async {
@@ -231,7 +247,9 @@ class _ModifVehicleState extends State<ModifVehicle> {
   TextEditingController nbrAxiesController = TextEditingController();
   final TextEditingController _Axies1Controller = TextEditingController();
   final TextEditingController _Axies2Controller = TextEditingController();
-  final TextEditingController _Axies3Controller = TextEditingController();
+   TextEditingController newbrand= TextEditingController();
+   TextEditingController newmodel= TextEditingController();
+   TextEditingController Comments= TextEditingController();
   List axies = [];
   Future<void> _showMyDialog(int i) async {
     return showDialog<void>(
@@ -332,9 +350,38 @@ class _ModifVehicleState extends State<ModifVehicle> {
   Widget build(BuildContext context) {
     var top = Get.statusBarHeight;
     double h6 = MediaQuery.of(context).size.height * 0.06;
+
+print("dddd1998+1994"+selectBrand.toString()+"//"+selectModel.toString());
+
+
+if (selectBrand.toString()=="OTHER" && selectModel.toString()=="OTHER") {
+  selectionbrand=true;
+  selectionmodel=true;
+print("ramippppppp");
+}else{
+  selectionbrand=false;
+    selectionmodel=false;
+  //newbrand.clear();
+   
+
+
+}
+// if (selectBrand.toString()!="OTHER") {
+//   selectionbrand=false;
+//     selectionmodel=true;
+
+// }
+if (selectBrand.toString()!="OTHER"&& selectModel.toString()=="OTHER" ) {
+  selectionbrand=false;
+    selectionmodel=true;
+
+}
+
+
     if (v.length < 2) {
       loadData2(v);
     }
+
     double h = MediaQuery.of(context).size.height;
     return Center(
       child: AnnotatedRegion<SystemUiOverlayStyle>(
@@ -448,6 +495,11 @@ class _ModifVehicleState extends State<ModifVehicle> {
                                                               newValue1;
                                                           v1 = ['---'];
                                                           selectModel = '---';
+                                                                                                     if (selectBrand.toString()=="OTHER") {
+  selectModel="OTHER";
+    
+
+}
                                                         });
 
                                                         loadData20(
@@ -565,6 +617,125 @@ class _ModifVehicleState extends State<ModifVehicle> {
                                               ],
                                             ),
                                           ),
+                                                                              SizedBox(height: 5,),
+
+                                        selectionbrand==true ?  Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          const Expanded(
+                                            child: Text(
+                                              'New Brand',
+                                              style: TextStyle(fontSize: 18),
+                                            ),
+                                          ),
+                                          Expanded(
+                                              flex: 1,
+                                              child: TextFormField(
+                                                enabled: selectionbrand,
+                                         
+                                                validator: (value) =>
+                                                    value == null ||
+                                                            value.isEmpty
+                                                        ? 'Required'
+                                                        : null,
+                                                controller: newbrand,
+                                                decoration: InputDecoration(
+                                                  hintText:
+                                                      "Please specify the new Brand ",
+                                                  hintStyle: TextStyle(fontSize: 12,overflow: TextOverflow.ellipsis),
+                                                  isDense: true,
+                                                  contentPadding:
+                                                      const EdgeInsets
+                                                              .symmetric(
+                                                          horizontal: 5,
+                                                          vertical: 10.0),
+                                                  enabledBorder:
+                                                      OutlineInputBorder(
+                                                    borderSide:
+                                                        const BorderSide(
+                                                            width: 1),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                  ),
+                                                  border: OutlineInputBorder(
+                                                    borderSide:
+                                                        const BorderSide(
+                                                            width: 1),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                  ),
+                                                  filled: true,
+                                                  fillColor: Colors.white,
+                                                ),
+                                              ))
+                                        ],
+                                      ),
+                                    ):Container(),
+                                    SizedBox(height: 5,),
+                                       selectionmodel==true ?  Padding(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 20),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          const Expanded(
+                                            child: Text(
+                                              'New Model',
+                                              style: TextStyle(fontSize: 18),
+                                            ),
+                                          ),
+                                          Expanded(
+                                              flex: 1,
+                                              child: TextFormField(
+                                                enabled: selectionmodel,
+                                         
+                                                validator: (value) =>
+                                                    value == null ||
+                                                            value.isEmpty
+                                                        ? 'Required'
+                                                        : null,
+                                                controller: newmodel,
+                                                decoration: InputDecoration(
+                                                  hintText:
+                                                      "Please specify the new model",
+                                                  hintStyle: TextStyle(fontSize: 12,overflow: TextOverflow.ellipsis),
+                                                  isDense: true,
+                                                  contentPadding:
+                                                      const EdgeInsets
+                                                              .symmetric(
+                                                          horizontal: 5,
+                                                          vertical: 10.0),
+                                                  enabledBorder:
+                                                      OutlineInputBorder(
+                                                    borderSide:
+                                                        const BorderSide(
+                                                            width: 1),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                  ),
+                                                  border: OutlineInputBorder(
+                                                    borderSide:
+                                                        const BorderSide(
+                                                            width: 1),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                  ),
+                                                  filled: true,
+                                                  fillColor: Colors.white,
+                                                ),
+                                              ))
+                                        ],
+                                      ),
+                                    ):Container(),
                                           Padding(
                                             padding: const EdgeInsets.symmetric(
                                                 horizontal: 20, vertical: 10),
@@ -682,6 +853,68 @@ class _ModifVehicleState extends State<ModifVehicle> {
                                               ],
                                             ),
                                           ),
+                                            Padding(
+                                            padding: const EdgeInsets.symmetric(
+                                                horizontal: 20),
+                                            child: Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment
+                                                      .spaceBetween,
+                                              children: [
+                                                const Expanded(
+                                                  child: Text(
+                                                    'Comments',
+                                                    style:
+                                                        TextStyle(fontSize: 18),
+                                                  ),
+                                                ),
+                                                Expanded(
+                                                    flex: 1,
+                                                    child: TextFormField(
+                                          maxLines: 4,
+
+                                                      validator: (value) =>
+                                                          value == null ||
+                                                                  value.isEmpty
+                                                              ? 'Required'
+                                                              : null,
+                                                      keyboardType:
+                                                          TextInputType.text,
+                                                      controller:
+                                                          Comments,
+                                                      decoration:
+                                                          InputDecoration(
+                                                        isDense: true,
+                                                        contentPadding:
+                                                            const EdgeInsets
+                                                                    .symmetric(
+                                                                horizontal: 5,
+                                                                vertical: 10.0),
+                                                        enabledBorder:
+                                                            OutlineInputBorder(
+                                                          borderSide:
+                                                              const BorderSide(
+                                                                  width: 1),
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(5),
+                                                        ),
+                                                        border:
+                                                            OutlineInputBorder(
+                                                          borderSide:
+                                                              const BorderSide(
+                                                                  width: 1),
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(5),
+                                                        ),
+                                                        filled: true,
+                                                        fillColor: Colors.white,
+                                                      ),
+                                                    ))
+                                              ],
+                                            ),
+                                          ),
                                           Padding(
                                             padding: const EdgeInsets.symmetric(
                                                 horizontal: 42, vertical: 10),
@@ -735,7 +968,7 @@ class _ModifVehicleState extends State<ModifVehicle> {
                                                         Colors.black,
                                                     child: CircleAvatar(
                                                         radius: 40,
-                                                        backgroundImage: image ==
+                                                        backgroundImage: widget.Image ==
                                                                 null
                                                             ? AssetImage(
                                                                 "assets/images/camera.png")
@@ -1464,11 +1697,30 @@ class _ModifVehicleState extends State<ModifVehicle> {
                                                             0xFF4A8522)),
                                               ),
                                               onPressed: () async {
+                                                         if (_Axies1Controller.text == "") {
+                  _Axies1Controller.text = "_";
+                }
+                if (_Axies2Controller.text == "") {
+                  _Axies2Controller.text = "_";
+                }
+                   if (newbrand.text == "") {
+                  newbrand.text = "_";
+                }
+                    if (newmodel.text == "") {
+                  newmodel.text = "_";
+                }     if (Comments.text == "") {
+                  Comments.text = "_";
+                }
+
+ 
                                                 _inputVehicle = {
                                                   "Brand":
                                                       selectBrand.toString(),
                                                   "Model":
                                                       selectModel.toString(),
+                                                       "New brand" : newbrand.text.toString(),
+                                                      "New model" : newmodel.text.toString(),
+
                                                   "Registration_plate":
                                                       rpController.text,
                                                   "Number_axles":
@@ -1477,8 +1729,6 @@ class _ModifVehicleState extends State<ModifVehicle> {
                                                       _Axies1Controller.text,
                                                   "w_axle2":
                                                       _Axies2Controller.text,
-
-// "vehicle_image":,
                                                   "TyreBrand_F":
                                                       dropdownValue1.toString(),
                                                   "TyrePattern_F":
@@ -1496,6 +1746,9 @@ class _ModifVehicleState extends State<ModifVehicle> {
                                                   "date_creation":
                                                       getCurrentDate()
                                                           .toString(),
+                                            "image_vehicle": "https://salesbridge.sharepoint.com/:i:/r/teams/BSEMIA-Tyrematch/Shared%20Documents/General/Tyrematch_reports/vehicle_"+rpController.text.toString()+".jpg",
+                                  "Comments": Comments.text.toString(),
+
                                                 };
 
                                                 Provider.of<downloadFileProvider>(
@@ -1507,7 +1760,11 @@ class _ModifVehicleState extends State<ModifVehicle> {
                                                         image);
                                                 print("eeeee" +
                                                     _inputVehicle.toString());
-                                                Navigator.pop(context);
+                                                Provider.of<downloadFileProvider>(context, listen: false)
+                                                    .settypehome("tractor");
+                                                          print("fffffffffffff"+image.path.toString());
+                             Navigator.of(context).pushReplacement(
+                      MaterialPageRoute(builder: (_) => Bend(force: 1)));
                                                 // exitConfirm3();
                                               },
                                               child: Text(

@@ -21,6 +21,8 @@ class _TyreInspection1State extends State<TyreInspection1> {
     super.initState();
   }
 
+
+var one=false ,two=false,three=false,four =false;
   List catalogdata1;
 
   List<String> uniquelist1;
@@ -319,25 +321,14 @@ class _TyreInspection1State extends State<TyreInspection1> {
                               Text(""),
                               IconButton(
                                   onPressed: () {
-                                    setState(() {
-                                      Provider.of<downloadFileProvider>(context,
+        setState(() {
+                                               Provider.of<downloadFileProvider>(context,
                                               listen: false)
-                                          .setcard(false);
-                                      print(
-                                          "cars1 ${Provider.of<downloadFileProvider>(context, listen: false).card}");
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .ischaked1 = false;
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .typeDamage1 = '---';
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .typeDamage10 = '---';
-                                    });
+                                          .setcard(false) ;
+                                        });
                                   },
                                   icon: Icon(Icons.close),
-                                  color: Colors.red,
+                                  color: Color.fromARGB(255, 184, 13, 13),
                                   iconSize: 30),
                             ],
                           ),
@@ -348,7 +339,7 @@ class _TyreInspection1State extends State<TyreInspection1> {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
-                                    "Additional informations ",
+                                    "Additional informations  ",
                                     style: TextStyle(fontSize: 22),
                                   ),
                                   SizedBox(
@@ -654,29 +645,118 @@ class _TyreInspection1State extends State<TyreInspection1> {
                                   SizedBox(
                                     height: 10,
                                   ),
-                                  Container(
-                                    width: 100,
-                                    height: 40,
-                                    child: ElevatedButton(
-                                      style: ButtonStyle(
-                                        backgroundColor:
-                                            MaterialStateProperty.all(
-                                                const Color(0xFF4A8522)),
+                                  Row(
+                                     mainAxisAlignment:
+                                        MainAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        width: 100,
+                                        height: 40,
+                                        child: ElevatedButton(
+                                          style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                                    const Color(0xFF4A8522)),
+                                          ),
+                                          onPressed: () {
+                                            setState(() {
+
+                                        if (
+
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage1 == '---' &&
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage10 == '---'&&
+                                       Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .serial1Controller.text== ' '&&
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .fettinghour1Controller.text== ' '&&
+                                           Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .commentsDamage1Controller.text== ' '
+
+
+
+
+
+
+
+
+
+
+                                        ) {
+                                                Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .ischaked1=false;
+                                        }
+                                        else{
+    Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .ischaked1=true;
+                                        }
+                                            
+
+                                            
+                                              Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .setcard(false);
+                                            });
+                                          },
+                                          child: const Text(
+                                            "Save",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                        ),
                                       ),
-                                      onPressed: () {
-                                        setState(() {
-                                          Provider.of<downloadFileProvider>(
-                                                  context,
-                                                  listen: false)
-                                              .setcard(false);
-                                        });
-                                      },
-                                      child: const Text(
-                                        "Save",
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
+                                      SizedBox(width: 20,)
+                                      ,
+                                      Container(
+                                        width: 100,
+                                        height: 40,
+                                        child: ElevatedButton(
+                                          style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                                    Color.fromARGB(255, 210, 59, 59)),
+                                          ),
+                                          onPressed: () {
+                                                setState(() {
+                  
+                                     
+                              
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage1 = '---';
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage10 = '---';
+                                       Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .serial1Controller.text= ' ';
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .fettinghour1Controller.text= ' ';
+                                           Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .commentsDamage1Controller.text= ' ';
+                                    });
+                                          },
+                                          child: const Text(
+                                            "Reset",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                        ),
+                                      ), 
+                                    ],
                                   ),
                                   SizedBox(
                                     height: 10,
@@ -710,20 +790,13 @@ class _TyreInspection1State extends State<TyreInspection1> {
                               Text(""),
                               IconButton(
                                   onPressed: () {
-                                    setState(() {
-                                      Provider.of<downloadFileProvider>(context,
+  setState(() {
+                                                Provider.of<downloadFileProvider>(context,
                                               listen: false)
-                                          .setcard2(false);
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .ischaked2 = false;
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .typeDamage2 = '---';
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .typeDamage20 = '---';
-                                    });
+                                          .setcard2(false) ;
+                                            });
+
+                               
                                   },
                                   icon: Icon(Icons.close),
                                   color: Colors.red,
@@ -1038,29 +1111,124 @@ class _TyreInspection1State extends State<TyreInspection1> {
                                   SizedBox(
                                     height: 10,
                                   ),
-                                  Container(
-                                    width: 100,
-                                    height: 40,
-                                    child: ElevatedButton(
-                                      style: ButtonStyle(
-                                        backgroundColor:
-                                            MaterialStateProperty.all(
-                                                const Color(0xFF4A8522)),
+                                  Row(
+                                     mainAxisAlignment:
+                                        MainAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        width: 100,
+                                        height: 40,
+                                        child: ElevatedButton(
+                                          style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                                    const Color(0xFF4A8522)),
+                                          ),
+                                          onPressed: () {
+                                            setState(() {
+                             if (
+
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage2 == '---' &&
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage20 == '---'&&
+                                       Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .serial2Controller.text== ' '&&
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .fettinghour2Controller.text== ' '&&
+                                           Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .commentsDamage2Controller.text== ' '
+
+
+
+
+
+
+
+
+
+
+                                        ) {
+                                                Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .ischaked2=false;
+                                        }
+                                        else{
+    Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .ischaked2=true;
+                                        }
+                                              Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .setcard2(false);
+                                            });
+                                          },
+                                          child: const Text(
+                                            "Save",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                        ),
                                       ),
-                                      onPressed: () {
-                                        setState(() {
-                                          Provider.of<downloadFileProvider>(
-                                                  context,
-                                                  listen: false)
-                                              .setcard2(false);
-                                        });
-                                      },
-                                      child: const Text(
-                                        "Save",
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.w700),
+                                      SizedBox(width: 20,),
+                                           Container(
+                                        width: 100,
+                                        height: 40,
+                                        child: ElevatedButton(
+                                          style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                                    Color.fromARGB(255, 182, 50, 50)),
+                                          ),
+                                          onPressed: () {
+                                          
+     setState(() {
+                                   
+                                 
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage2 = '---';
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage20 = '---';
+
+   Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .serial2Controller.text = ' ';
+                                          
+   Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .fettinghour2Controller.text = ' ';
+                                             Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .commentsDamage2Controller.text = ' ';
+
+                                    });
+
+
+
+
+
+
+
+
+                                          },
+                                          child: const Text(
+                                            "Reset",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                        ),
                                       ),
-                                    ),
+                                    ],
                                   ),
                                   SizedBox(
                                     height: 10,
@@ -1094,20 +1262,15 @@ class _TyreInspection1State extends State<TyreInspection1> {
                               Text(""),
                               IconButton(
                                   onPressed: () {
-                                    setState(() {
-                                      Provider.of<downloadFileProvider>(context,
+                                     setState(() {
+                           Provider.of<downloadFileProvider>(context,
                                               listen: false)
                                           .setcard3(false);
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .ischaked3 = false;
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .typeDamage3 = '---';
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .typeDamage30 = '---';
-                                    });
+                                            });
+
+
+
+
                                   },
                                   icon: Icon(Icons.close),
                                   color: Colors.red,
@@ -1429,29 +1592,116 @@ class _TyreInspection1State extends State<TyreInspection1> {
                                   SizedBox(
                                     height: 10,
                                   ),
-                                  Container(
-                                    width: 100,
-                                    height: 40,
-                                    child: ElevatedButton(
-                                      style: ButtonStyle(
-                                        backgroundColor:
-                                            MaterialStateProperty.all(
-                                                const Color(0xFF4A8522)),
+                                  Row(
+                                     mainAxisAlignment:
+                                        MainAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        width: 100,
+                                        height: 40,
+                                        child: ElevatedButton(
+                                          style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                                    const Color(0xFF4A8522)),
+                                          ),
+                                          onPressed: () {
+                                            setState(() {
+                                               if (
+
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage3 == '---' &&
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage30 == '---'&&
+                                       Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .serial3Controller.text== ' '&&
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .fettinghour3Controller.text== ' '&&
+                                           Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .commentsDamage3Controller.text== ' '
+
+
+
+
+
+
+
+
+
+
+                                        ) {
+                                                Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .ischaked3=false;
+                                        }
+                                        else{
+    Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .ischaked3=true;
+                                        }
+                                              Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .setcard3(false);
+                                            });
+                                          },
+                                          child: const Text(
+                                            "Save",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                        ),
+                                      ),SizedBox(width: 20,),
+                                          Container(
+                                        width: 100,
+                                        height: 40,
+                                        child: ElevatedButton(
+                                          style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                                    Color.fromARGB(255, 186, 59, 59)),
+                                          ),
+                                          onPressed: () {
+ setState(() {
+                         
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage3 = '---';
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage30 = '---';
+
+
+                                            Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .serial3Controller.text = ' ';
+                                          
+                                            Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .commentsDamage3Controller.text = ' ';
+                                          
+                                            Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .fettinghour3Controller.text = ' ';
+                                    });
+
+                                          
+                                          },
+                                          child: const Text(
+                                            "Reset",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                        ),
                                       ),
-                                      onPressed: () {
-                                        setState(() {
-                                          Provider.of<downloadFileProvider>(
-                                                  context,
-                                                  listen: false)
-                                              .setcard3(false);
-                                        });
-                                      },
-                                      child: const Text(
-                                        "Save",
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.w700),
-                                      ),
-                                    ),
+                                    ],
                                   ),
                                   SizedBox(
                                     height: 10,
@@ -1485,20 +1735,13 @@ class _TyreInspection1State extends State<TyreInspection1> {
                               Text(""),
                               IconButton(
                                   onPressed: () {
-                                    setState(() {
-                                      Provider.of<downloadFileProvider>(context,
+
+                                          setState(() {
+                                                  Provider.of<downloadFileProvider>(context,
                                               listen: false)
-                                          .setcard4(false);
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .ischaked4 = false;
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .typeDamage4 = '---';
-                                      Provider.of<downloadFileProvider>(context,
-                                              listen: false)
-                                          .typeDamage40 = '---';
-                                    });
+                                          .setcard4(false) ;
+                                            });
+                                 
                                   },
                                   icon: Icon(Icons.close),
                                   color: Colors.red,
@@ -1816,29 +2059,116 @@ class _TyreInspection1State extends State<TyreInspection1> {
                                   SizedBox(
                                     height: 10,
                                   ),
-                                  Container(
-                                    width: 100,
-                                    height: 40,
-                                    child: ElevatedButton(
-                                      style: ButtonStyle(
-                                        backgroundColor:
-                                            MaterialStateProperty.all(
-                                                const Color(0xFF4A8522)),
+                                  Row(
+                                     mainAxisAlignment:
+                                        MainAxisAlignment.center,
+                                    children: [
+                                      Container(
+                                        width: 100,
+                                        height: 40,
+                                        child: ElevatedButton(
+                                          style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                                    const Color(0xFF4A8522)),
+                                          ),
+                                          onPressed: () {
+                                            setState(() {
+                                       if (
+
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage4 == '---' &&
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage40 == '---'&&
+                                       Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .serial4Controller.text== ' '&&
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .fettinghour4Controller.text== ' '&&
+                                           Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .commentsDamage4Controller.text== ' '
+
+
+
+
+
+
+
+
+
+
+                                        ) {
+                                                Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .ischaked4=false;
+                                        }
+                                        else{
+    Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .ischaked4=true;
+                                        }
+                                              Provider.of<downloadFileProvider>(
+                                                      context,
+                                                      listen: false)
+                                                  .setcard4(false);
+                                            });
+                                          },
+                                          child: const Text(
+                                            "Save",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                        ),
                                       ),
-                                      onPressed: () {
-                                        setState(() {
-                                          Provider.of<downloadFileProvider>(
-                                                  context,
-                                                  listen: false)
-                                              .setcard4(false);
-                                        });
-                                      },
-                                      child: const Text(
-                                        "Save",
-                                        style: TextStyle(
-                                            fontWeight: FontWeight.w700),
+                                      SizedBox(width: 20,),
+                                        Container(
+                                        width: 100,
+                                        height: 40,
+                                        child: ElevatedButton(
+                                          style: ButtonStyle(
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                                    Color.fromARGB(255, 185, 54, 54)),
+                                          ),
+                                          onPressed: () {
+                                      
+
+   setState(() {
+                               
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage4 = '---';
+                                      Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .typeDamage40 = '---';
+                                              Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .serial4Controller.text = ' ';
+                                                    Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .fettinghour4Controller.text = ' ';
+                                                              Provider.of<downloadFileProvider>(context,
+                                              listen: false)
+                                          .commentsDamage4Controller.text = ' ';
+                                    });
+
+
+
+                                          },
+                                          child: const Text(
+                                            "Reset",
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w700),
+                                          ),
+                                        ),
                                       ),
-                                    ),
+                                    ],
                                   ),
                                   SizedBox(
                                     height: 10,

@@ -1317,7 +1317,7 @@ class _TestState extends State<Test> {
                                     "RTD-RL": "${_rtdTwoController.text}",
                                     "RTD-FR": "${_rtdTreeController.text}",
                                     "RTD-RR": "${_rtdFourController.text}",
-                                    "Ip-FL": "${_ipOneController.text}",
+                                    "IP-FL": "${_ipOneController.text}",
                                     "Ip-RL": "${_ipTwoController.text}",
                                     "Ip-FR": "${_ipThreeController.text}",
                                     "Ip-RR": "${_ipFourController.text}",
@@ -1361,7 +1361,7 @@ class _TestState extends State<Test> {
                                     "AtmPresure": "null",
                                     "Temperature": "null",
                                     "Air_moisture": "null",
-                                    "Test_counter": "null",
+                                    "Menu_number": "null",
                                   };
                                   var jsonDetails = {
                                     "Session_name": "null",

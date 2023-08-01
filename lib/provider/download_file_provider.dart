@@ -1,9 +1,11 @@
 import 'dart:convert';
+import 'dart:developer';
 import 'dart:io';
 import 'package:device_info/device_info.dart';
 import 'package:external_path/external_path.dart';
 import 'package:flutter/material.dart';
 import 'package:image_gallery_saver/image_gallery_saver.dart';
+import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -42,10 +44,10 @@ class downloadFileProvider with ChangeNotifier {
   TextEditingController fettinghour3Controller = TextEditingController();
   TextEditingController fettinghour4Controller = TextEditingController();
 
-  var id_damage1 = "";
-  var id_damage2 = "";
-  var id_damage3 = "";
-  var id_damage4 = "";
+  var id_damage1 = "_";
+  var id_damage2 = "_";
+  var id_damage3 = "_";
+  var id_damage4 = "_";
   var typeDamage1 = '---';
   var typeDamage10 = '---';
 
@@ -57,7 +59,6 @@ class downloadFileProvider with ChangeNotifier {
 
   var typeDamage4 = '---';
   var typeDamage40 = '---';
-
   List<String> uniquelist1;
 
   List _listVehicles = [];
@@ -162,6 +163,27 @@ class downloadFileProvider with ChangeNotifier {
     notifyListeners();
   }
 
+   var _reserved_image;
+  get reserved_image => _reserved_image;
+  setReserved_image(value) {
+    _reserved_image = value;
+    notifyListeners();
+  }
+
+    var _data1;
+  get data1 => _data1;
+  setdata1(value) {
+    _data1 = value;
+    notifyListeners();
+  }
+
+
+    var _data2;
+  get data2 => _data2;
+  setdata2(value) {
+    _data2 = value;
+    notifyListeners();
+  }
   var _details;
   get details => _details;
   setDetails(value) {
@@ -175,7 +197,14 @@ class downloadFileProvider with ChangeNotifier {
     _performance = value;
     notifyListeners();
   }
-
+var _imgpathverify;
+/////
+  get imgpathverify => _imgpathverify;
+  setimgpathverify(value) {
+    _imgpathverify = value;
+    notifyListeners();
+  }
+//////
   var _typehome;
   get typehome => _typehome;
   settypehome(value) {
@@ -255,9 +284,9 @@ class downloadFileProvider with ChangeNotifier {
       if (Platform.isAndroid) {
         DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
         AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
-        print('Running on ${androidInfo.manufacturer}');
+        print('Running on1  ${androidInfo.manufacturer}');
         if (androidInfo.manufacturer.toString() == "HUAWEI") {
-          if (await _requestPermission(Permission.storage)) {
+          if (await _requestPermission(Permission.storage)|| await _requestPermission(Permission.manageExternalStorage)) {
             var pathlist = await ExternalPath.getExternalStorageDirectories();
             if (pathlist.length > 1) {
               newPath = pathlist[1];
@@ -281,11 +310,7 @@ class downloadFileProvider with ChangeNotifier {
         }
 
         if (!androidInfo.manufacturer.toString().contains("HUAWEI")) {
-          if (await _requestPermission(Permission.storage) &&
-              // access media location needed for android 10/Q
-              await _requestPermission(Permission.accessMediaLocation) &&
-              // manage external storage needed for android 11/R
-              await _requestPermission(Permission.manageExternalStorage)) {
+          if (1==1) {
             var pathlist = await ExternalPath.getExternalStorageDirectories();
             if (pathlist.length > 1) {
               newPath = pathlist[1];
@@ -302,6 +327,7 @@ class downloadFileProvider with ChangeNotifier {
 
             File userfile;
             userfile = File(newPath + "/user.json");
+            print("objectobjectobject"+userfile.toString());
             var test100 = jsonEncode(_inputuser);
             print(test100);
             userfile.writeAsString(test100);
@@ -334,16 +360,58 @@ class downloadFileProvider with ChangeNotifier {
   }
 
   Future<bool> saveFile(data, String fileName) async {
+
+                                                                
+
+
+
     print("uuuu" + data.toString());
     Directory directory;
     try {
       File saveFile;
 
       if (_mainPath != null) {
+        print("rami4455"+_mainPath.toString());
         directory = Directory(_mainPath);
         saveFile = File("${_mainPath}/$fileName.json");
       } else {
+
+if (typehome=="search") {
+  
+
+
+        String newPath = "";
+          var pathlist = await ExternalPath.getExternalStorageDirectories();
+          if (pathlist.length > 1) {
+            newPath = pathlist[1];
+          }
+          
+           else {
+            newPath = pathlist[0];
+          }
+          print("herehereherehere" + pathlist.toString());
+  DateTime now1 = DateTime.now();
+
+          String formattedDate = DateFormat('yyyy-MM-dd–kk-mm').format(now1);
+          print("herehereherehere" + formattedDate.toString());
+
+           SharedPreferences prefs1 = await SharedPreferences.getInstance();
+
+           String path = prefs1.getString('path');
+           print("pathpathpathpathpath : $path");
+
+
+if (path != null) {
+  setP1(path);
+
+}else{
+ setP1(newPath + "/bridge/" + "$formattedDate" + "_TyreInspection");
+
+}
+}
         directory = p1;
+              print("rami4455p1" + p1.toString());
+
         saveFile = File("${p1.path}/$fileName.json");
       }
       print("kkk" + p1.path.toString());
@@ -372,6 +440,8 @@ class downloadFileProvider with ChangeNotifier {
     String fileName,
     File f1,
   ) async {
+        File f2;
+
     Directory directory;
     var newPath = "";
 
@@ -383,9 +453,9 @@ class downloadFileProvider with ChangeNotifier {
       if (Platform.isAndroid) {
         DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
         AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
-        print('Running on ${androidInfo.manufacturer}');
+        print('Running on1 ${androidInfo.manufacturer}');
         if (androidInfo.manufacturer.toString() == "HUAWEI") {
-          if (await _requestPermission(Permission.storage) //&&
+          if (await _requestPermission(Permission.storage)|| await _requestPermission(Permission.manageExternalStorage) //&&
               // access media location needed for android 10/Q
               // await _requestPermission(Permission.accessMediaLocation) &&
               // // manage external storage needed for android 11/R
@@ -406,7 +476,7 @@ class downloadFileProvider with ChangeNotifier {
         }
 
         if (!androidInfo.manufacturer.toString().contains("HUAWEI")) {
-          if (await _requestPermission(Permission.storage) &&
+          if (await _requestPermission(Permission.storage) ||
               // access media location needed for android 10/Q
               await _requestPermission(Permission.accessMediaLocation) &&
               // manage external storage needed for android 11/R
@@ -428,10 +498,11 @@ class downloadFileProvider with ChangeNotifier {
       saveFile = File("${newPath}/$fileName.json");
       print(f1.toString());
       print("objectobjectobjectobjectf1" + newPath.toString());
-      if (f1.toString() != "null") {
-        print("objectobjectobjectobjectf1" + f1.toString());
+        print("executed" + f1.toString());
+
+        print("executed");
         f1.copy(newPath + "/${fileName}.jpg");
-      }
+ 
 
       if (!await directory.exists()) {
         await directory.create(recursive: true);
@@ -492,7 +563,7 @@ class downloadFileProvider with ChangeNotifier {
     Directory directory;
     try {
       if (Platform.isAndroid) {
-        if (await _requestPermission(Permission.storage)) {
+        if (await _requestPermission(Permission.storage)|| await _requestPermission(Permission.manageExternalStorage) ) {
           String newPath = "";
           var pathlist = await ExternalPath.getExternalStorageDirectories();
           if (pathlist.length > 1) {
@@ -547,7 +618,7 @@ class downloadFileProvider with ChangeNotifier {
     _jsonfile = [];
     try {
       if (Platform.isAndroid) {
-        if (await _requestPermission(Permission.storage)) {
+        if (await _requestPermission(Permission.storage)|| await _requestPermission(Permission.manageExternalStorage)) {
           String newPath = "";
           var pathlist = await ExternalPath.getExternalStorageDirectories();
           if (pathlist.length > 1) {
@@ -583,7 +654,7 @@ class downloadFileProvider with ChangeNotifier {
     Directory directory;
     try {
       if (Platform.isAndroid) {
-        if (await _requestPermission(Permission.storage)) {
+        if (await _requestPermission(Permission.storage)|| await _requestPermission(Permission.manageExternalStorage)) {
           String newPath = "";
           var pathlist = await ExternalPath.getExternalStorageDirectories();
           if (pathlist.length > 1) {
@@ -627,7 +698,7 @@ class downloadFileProvider with ChangeNotifier {
     _listFolders = [];
     try {
       if (Platform.isAndroid) {
-        if (await _requestPermission(Permission.storage)) {
+        if (await _requestPermission(Permission.storage)|| await _requestPermission(Permission.manageExternalStorage)) {
           String newPath = "";
           var pathlist = await ExternalPath.getExternalStorageDirectories();
           if (pathlist.length > 1) {
@@ -635,7 +706,7 @@ class downloadFileProvider with ChangeNotifier {
           } else {
             newPath = pathlist[0];
           }
-          print("herehereherehere" + pathlist.toString());
+          print("herehereherehere1" + pathlist.toString());
           newPath = newPath + "/bridge";
           directory = Directory(newPath);
         } else {
@@ -651,6 +722,8 @@ class downloadFileProvider with ChangeNotifier {
       if (await directory.exists()) {
         List listDirectory = await directory.listSync();
         _listFolders = listDirectory;
+        print("fol1"+_listFolders[3].toString());
+        print(Directory(_listFolders[3].path).statSync().toString());
         notifyListeners();
       } else {
         return false;
@@ -669,7 +742,7 @@ class downloadFileProvider with ChangeNotifier {
 
     try {
       if (Platform.isAndroid) {
-        if (await _requestPermission(Permission.storage)) {
+        if (await _requestPermission(Permission.storage)|| await _requestPermission(Permission.manageExternalStorage)) {
           var pathlist = await ExternalPath.getExternalStorageDirectories();
           if (pathlist.length > 1) {
             newPath = pathlist[1];
@@ -744,7 +817,7 @@ class downloadFileProvider with ChangeNotifier {
 
     try {
       if (Platform.isAndroid) {
-        if (await _requestPermission(Permission.storage)) {
+        if (await _requestPermission(Permission.storage)|| await _requestPermission(Permission.manageExternalStorage)) {
           var pathlist = await ExternalPath.getExternalStorageDirectories();
           if (pathlist.length > 1) {
             newPath = pathlist[1];

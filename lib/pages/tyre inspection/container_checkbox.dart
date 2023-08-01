@@ -96,6 +96,8 @@ class _ContainerCheckboxState extends State<ContainerCheckbox> {
                             maxValue: 100,
                             maxDecimalDigit: 2,
                             decimalPoint: true,
+                          ),     IDKitNumeralTextInputFormatter.min(
+                              minValue: 1
                           ),
                         ],
                         keyboardType: TextInputType.numberWithOptions(),
@@ -145,9 +147,15 @@ class _ContainerCheckboxState extends State<ContainerCheckbox> {
                     Expanded(
                       flex: 1,
                       child: TextFormField(
-                        inputFormatters: <TextInputFormatter>[
-                          FilteringTextInputFormatter.allow(
-                              RegExp("^[0-9][0-9]?\$|^145\$"))
+                           inputFormatters: [
+                          IDKitNumeralTextInputFormatter.max(
+                            maxValue: 100,
+                            maxDecimalDigit: 2,
+                            decimalPoint: true,
+                          ),
+                             IDKitNumeralTextInputFormatter.min(
+                               minValue: 1
+                             ),
                         ],
                         validator: (value) => value.isEmpty ? 'Required' : null,
                         keyboardType: TextInputType.number,
@@ -186,6 +194,7 @@ class _ContainerCheckboxState extends State<ContainerCheckbox> {
                               height: 14,
                               color: Colors.white,
                               child: Checkbox(
+                              materialTapTargetSize: MaterialTapTargetSize.padded,
                                 checkColor: Colors.black,
                                 fillColor:
                                     MaterialStateProperty.all(Colors.white),
@@ -200,24 +209,136 @@ class _ContainerCheckboxState extends State<ContainerCheckbox> {
                                 ),
                                 value: widget.isChaked,
                                 onChanged: (bool value) {
-                                  setState(() {
-                                    widget.isChaked = value;
+                                  // setState(() {
+                                  //   widget.isChaked = value;
+
+                                  //   switch (widget.id) {
+                                  //     case 1:
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .ischaked1 = value;
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard(value);
+
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard(value);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard2(false);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard3(false);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard4(false);
+
+                                  //       break;
+                                  //     case 2:
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .ischaked2 = value;
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard2(value);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard(false);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard3(false);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard4(false);
+
+                                  //       break;
+                                  //     case 3:
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .ischaked3 = value;
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard3(value);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard2(false);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard(false);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard4(false);
+                                  //       break;
+                                  //     case 4:
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .ischaked4 = value;
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard4(value);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard2(false);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard3(false);
+                                  //       Provider.of<downloadFileProvider>(
+                                  //               context,
+                                  //               listen: false)
+                                  //           .setcard(false);
+                                  //       break;
+                                  //     default:
+                                  //       print("nothing");
+                                  //   }
+                                  // }
+                                  
+                                  // );
+                                },
+                              )),
+                        )),
+                     Expanded(
+                      flex: 3,
+                      child: ElevatedButton(
+                        
+                           style: ButtonStyle(
+                             elevation:   MaterialStateProperty.all(0.0),
+                                            backgroundColor:
+                                                MaterialStateProperty.all(
+                                                    Color.fromARGB(0, 255, 255, 255)),
+                                          ),
+                        
+                        onPressed: (){
+                           setState(() {
 
                                     switch (widget.id) {
                                       case 1:
-                                        Provider.of<downloadFileProvider>(
-                                                context,
-                                                listen: false)
-                                            .ischaked1 = value;
-                                        Provider.of<downloadFileProvider>(
-                                                context,
-                                                listen: false)
-                                            .setcard(value);
+                                     
 
                                         Provider.of<downloadFileProvider>(
                                                 context,
                                                 listen: false)
-                                            .setcard(value);
+                                            .setcard(true);
                                         Provider.of<downloadFileProvider>(
                                                 context,
                                                 listen: false)
@@ -233,14 +354,11 @@ class _ContainerCheckboxState extends State<ContainerCheckbox> {
 
                                         break;
                                       case 2:
+                                       
                                         Provider.of<downloadFileProvider>(
                                                 context,
                                                 listen: false)
-                                            .ischaked2 = value;
-                                        Provider.of<downloadFileProvider>(
-                                                context,
-                                                listen: false)
-                                            .setcard2(value);
+                                            .setcard2(true);
                                         Provider.of<downloadFileProvider>(
                                                 context,
                                                 listen: false)
@@ -256,14 +374,11 @@ class _ContainerCheckboxState extends State<ContainerCheckbox> {
 
                                         break;
                                       case 3:
+                                      
                                         Provider.of<downloadFileProvider>(
                                                 context,
                                                 listen: false)
-                                            .ischaked3 = value;
-                                        Provider.of<downloadFileProvider>(
-                                                context,
-                                                listen: false)
-                                            .setcard3(value);
+                                            .setcard3(true);
                                         Provider.of<downloadFileProvider>(
                                                 context,
                                                 listen: false)
@@ -278,14 +393,11 @@ class _ContainerCheckboxState extends State<ContainerCheckbox> {
                                             .setcard4(false);
                                         break;
                                       case 4:
+                                    
                                         Provider.of<downloadFileProvider>(
                                                 context,
                                                 listen: false)
-                                            .ischaked4 = value;
-                                        Provider.of<downloadFileProvider>(
-                                                context,
-                                                listen: false)
-                                            .setcard4(value);
+                                            .setcard4(true);
                                         Provider.of<downloadFileProvider>(
                                                 context,
                                                 listen: false)
@@ -303,15 +415,11 @@ class _ContainerCheckboxState extends State<ContainerCheckbox> {
                                         print("nothing");
                                     }
                                   });
-                                },
-                              )),
-                        )),
-                    const Expanded(
-                      flex: 3,
-                      child: Text(
+                      }, child: Text(
+                        
                         'Additional information',
-                        style: TextStyle(fontSize: 12),
-                      ),
+                        style: TextStyle(fontSize: 9,color: Color.fromRGBO(42, 42, 42, 1)),
+                      ),)  
                     ),
                   ],
                 ),

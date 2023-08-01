@@ -4,6 +4,7 @@ import 'package:flutter_blue_app/pages/login.dart';
 import 'package:flutter/services.dart';
 
 import 'package:flutter_blue_app/provider/download_file_provider.dart';
+import 'package:permission_handler/permission_handler.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -15,6 +16,52 @@ import 'MainPage.dart';
 bool islogin = false;
 const primaryColor = Color.fromARGB(255, 0, 0, 0);
 //Wakelock.enable();
+
+Future<bool> _requestPermission(Permission permission) async {
+  if (await permission.isGranted) {
+    return true;
+  } else {
+    var result = await permission.request();
+    if (result == PermissionStatus.granted) {
+      return true;
+    }
+    else{
+      await permission.request();
+    }
+  }
+  return false;
+}
+
+getper() async{
+  await _requestPermission(Permission.manageExternalStorage);
+  await _requestPermission(Permission.audio);
+  await _requestPermission(Permission.videos);
+  await _requestPermission(Permission.photos);
+  await _requestPermission(Permission.accessMediaLocation);
+  await _requestPermission(Permission.storage);
+
+  // await _requestPermission(Permission.manageExternalStorage);
+
+ // if(await Permission.manageExternalStorage.isGranted){
+ //   await _requestPermission(Permission.storage);
+ // }else{
+   // await _requestPermission(Permission.manageExternalStorage);
+  //}
+
+
+ // if(await Permission.storage.isGranted){
+  //  await _requestPermission(Permission.audio);
+ // }else{
+ //   await _requestPermission(Permission.storage);
+//  }
+ // if(await Permission.audio.isGranted){
+ //   await _requestPermission(Permission.accessMediaLocation);
+ // }else{
+  //  await _requestPermission(Permission.audio);
+ // }
+
+
+}
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations(
@@ -57,7 +104,7 @@ class _FirstActivityState extends State<FirstActivity> {
     clearShare();
     print("Shared clear");
     super.initState();
-
+getper();
     SystemChrome.setPreferredOrientations([
       DeviceOrientation.portraitUp,
     ]);

@@ -51,7 +51,8 @@ class _SlidepageState extends State<Slidepage> {
   var axeldiff;
   var rcratio;
   var rf;
-
+var db;
+var da;
   var iaravg;
   var leadavg;
   var rfavg;
@@ -60,7 +61,7 @@ class _SlidepageState extends State<Slidepage> {
   var axledfavg;
   var rcratioavg;
   var slipavg;
-
+ var tyrematchjson ;
   String typetest;
   List tm = [];
   List<StorageInfo> storageInfo = [];
@@ -80,45 +81,8 @@ class _SlidepageState extends State<Slidepage> {
   PageController page = PageController(initialPage: 0);
   int pageIndex = 0;
   var v3;
-  List na = ["Lead Lag", "Slip %", "Axle Test", "Iar rc lead", "Iar"];
-  // getPosition() async {
-  //   loc.Location location = new loc.Location();
+  List na = ["Lead Lag", "Slip %", "Axle Test", "IAR rc lead", "IAR"];
 
-  //   bool _serviceEnabled;
-  //   loc.PermissionStatus _permissionGranted;
-  //   loc.LocationData _locationData;
-
-  //   _serviceEnabled = await location.serviceEnabled();
-  //   if (!_serviceEnabled) {
-  //     _serviceEnabled = await location.requestService();
-  //     if (!_serviceEnabled) {
-
-  //       return;
-  //     }
-  //   }
-
-  //   _permissionGranted = await location.hasPermission();
-  //   if (_permissionGranted == PermissionStatus.denied) {
-  //     _permissionGranted = await location.requestPermission();
-  //     if (_permissionGranted != PermissionStatus.granted) {
-  //       return;
-  //     }
-  //   }
-
-  //   _locationData = await location.getLocation();
-  //   final coordinates =
-  //       new Coordinates(_locationData.latitude, _locationData.longitude);
-  //   var addresses =
-  //       await Geocoder.local.findAddressesFromCoordinates(coordinates);
-  //   var first = addresses.first;
-  //   var name = first.adminArea + '_' + first.subAdminArea.split(' ').join('_');
-  //   return name;
-  // }
-
-  /// Determine the current position of the device.
-  ///
-  /// When the location services are not enabled or permissions
-  /// are denied the `Future` will return an error.
   Future<Position> _determinePosition() async {
     bool serviceEnabled;
     LocationPermission permission;
@@ -160,17 +124,7 @@ class _SlidepageState extends State<Slidepage> {
       if (Platform.isAndroid) {
         String newPath = "";
         if (await _requestPermission(Permission.storage)) {
-          // directory = (await getExternalStorageDirectory());
-          // 
-          // List<String> paths = directory.path.split("/");
-          // for (int x = 1; x < paths.length; x++) {
-          //   String folder = paths[x];
-          //   if (folder != "Android") {
-          //     newPath += "/" + folder;
-          //   } else {
-          //     break;
-          //   }
-          // }
+
                  var pathlist = await ExternalPath.getExternalStorageDirectories();
           if (pathlist.length > 1) {
             newPath = pathlist[1];
@@ -181,7 +135,7 @@ class _SlidepageState extends State<Slidepage> {
           }
           print("herehereherehere" + pathlist.toString());
 
-          String formattedDate = DateFormat('dd-MM-yyyy–kk-mm').format(now);
+          String formattedDate = DateFormat('yyyy-MM-dd–kk-mm').format(now);
 
           SharedPreferences prefs1 = await SharedPreferences.getInstance();
 
@@ -246,7 +200,6 @@ class _SlidepageState extends State<Slidepage> {
                 100);
 
         if (test0[0][1].toString().contains("&5")) {
-          // print("eeeeeeeeeeeeee1" + test0[0][1].toString());
 
           t1[i][0] =
               (double.parse(test0[i][3 - 1]) / double.parse(test0[i][5 - 1]));
@@ -279,6 +232,7 @@ class _SlidepageState extends State<Slidepage> {
 
         t1[i][5] = ((double.parse(test0[i][3 - 1]) / 4096) -
             (double.parse(test0[i][5 - 1]) / 4096));
+            
         t1[i][6] = ((double.parse(test0[i][3 - 1]) / 4096) /
             ((double.parse(test0[i][5 - 1]) / 4096)));
         t1[i][7] =
@@ -354,7 +308,7 @@ class _SlidepageState extends State<Slidepage> {
         rf = false;
 
         iaravg = "N/A";
-        leadavg = avg[1].toStringAsFixed(1);
+        leadavg = avg[1].toStringAsFixed(2);
         rfavg = "N/A";
         frontrcravg = "N/A";
         rearrcavg = "N/A";
@@ -382,8 +336,8 @@ class _SlidepageState extends State<Slidepage> {
         slipavg = avg[4].toStringAsFixed(2);
       }
       if (typetest.contains("3")) {
-        var v1 = ((double.parse(test0[0][3 - 1]) / 4096)).toStringAsFixed(0);
-        var v2 = ((double.parse(test0[0][5 - 1]) / 4096)).toStringAsFixed(0);
+        var v1 = ((double.parse(test0[0][3 - 1]) / 4096)).toStringAsFixed(3);
+        var v2 = ((double.parse(test0[0][5 - 1]) / 4096)).toStringAsFixed(3);
         v3 = v1.toString() + " / " + v2.toString();
         iar = false;
         lead = false;
@@ -398,25 +352,25 @@ class _SlidepageState extends State<Slidepage> {
         rfavg = "N/A";
         frontrcravg = "N/A";
         rearrcavg = "N/A";
-        axledfavg = avg[5].toStringAsFixed(2);
+        axledfavg = avg[5].toStringAsFixed(3);
         rcratioavg = v3.toString();
         slipavg = "N/A";
       }
       if (typetest.contains("4")) {
         iar = true;
         lead = true;
-        frontrc = false;
-        rearrc = false;
+        frontrc = true;
+        rearrc = true;
         slip = false;
         axeldiff = false;
         rcratio = false;
         rf = true;
 
-        iaravg = avg[0].toStringAsFixed(3);
-        leadavg = avg[1].toStringAsFixed(1);
-        rfavg = avg[7].toStringAsFixed(0);
-        frontrcravg = "N/A";
-        rearrcavg = "N/A";
+        iaravg = avg[0].toStringAsFixed(4);
+        leadavg = avg[1].toStringAsFixed(2);
+        rfavg = avg[7].toStringAsFixed(3);
+        frontrcravg = avg[2].toStringAsFixed(0);
+        rearrcavg = avg[3].toStringAsFixed(0);
         axledfavg = "N/A";
         rcratioavg = "N/A";
         slipavg = "N/A";
@@ -431,7 +385,7 @@ class _SlidepageState extends State<Slidepage> {
         rcratio = false;
         rf = false;
 
-        iaravg = avg[0].toStringAsFixed(3);
+        iaravg = avg[0].toStringAsFixed(4);
         leadavg = "N/A";
         rfavg = "N/A";
         frontrcravg = "N/A";
@@ -442,8 +396,8 @@ class _SlidepageState extends State<Slidepage> {
       }
       var da1 = int.parse(test0[0][7].toString());
       var db1 = int.parse(test0[0][8].toString());
-      var da = da1 / 100;
-      var db = db1 / 100;
+       da = da1 / 100;
+       db = db1 / 100;
       var calculejson = {
         "Lead": leadavg.toString(),
         "IAR": iaravg.toString(),
@@ -452,9 +406,8 @@ class _SlidepageState extends State<Slidepage> {
         "RC Ratio": rfavg.toString(),
         "Slip": slipavg.toString(),
         "Difference": axledfavg.toString(),
-        "Ratio": rcratioavg.toString(),
-        "Distance A": da.toString(),
-        "Distance B": db.toString(),
+        "Left/Right": rcratioavg.toString()
+  
       };
       print("ggg8gyu" + calculejson.toString());
 
@@ -470,7 +423,8 @@ class _SlidepageState extends State<Slidepage> {
       ccc.add(slipavg.toString());
       ccc.add(axledfavg.toString());
       ccc.add(rcratioavg.toString());
-      var tyrematchjson = {
+      var menu101 = typetest.toString().replaceAll("&", "");
+       tyrematchjson = {
         "TM_Inspection_id": "$rand_id",
         "Tyre_match_kit_id": id.toString(),
         "RS1 A": "${test0[0][2].toString()}",
@@ -478,10 +432,12 @@ class _SlidepageState extends State<Slidepage> {
         "RS1 B": "${test0[0][3].toString()}",
         "RS2 B": "${test0[0][5].toString()}",
         "Distance_mode": dm.toString(),
-        "AtmPresure": "${atmp * 0.01 / widget.title.length}",
-        "Temperature": "${temp * 0.01 / widget.title.length}",
+        "Distance A": da.toString(),
+        "Distance B": db.toString(),
+        "AtmPresure": "${(atmp * 0.01 / widget.title.length).toStringAsFixed(1)}",
+        "Temperature": "${(temp * 0.01 / widget.title.length).toStringAsFixed(1)}",
         "Air_moisture": "${airm / widget.title.length}",
-        "Test_counter": "${typetest}",
+        "Menu_number": "${menu101}",
       };
       print("888" + calculejson.toString());
       Provider.of<downloadFileProvider>(context, listen: false)
@@ -622,7 +578,7 @@ class _SlidepageState extends State<Slidepage> {
                               "RTD-RL": "N/A",
                               "RTD-FR": "N/A",
                               "RTD-RR": "N/A",
-                              "Ip-FL": "N/A",
+                              "IP-FL": "N/A",
                               "Ip-RL": "N/A",
                               "Ip-FR": "N/A",
                               "Ip-RR": "N/A",
@@ -643,21 +599,21 @@ class _SlidepageState extends State<Slidepage> {
                               "Fitting-hours-FR": "N/A",
                               "Fitting-hours-RR": "N/A",
                             };
-                            print("zzzzzz" + tyreInspection.toString());
+                            print("zzzzzz1555" + tyrematchjson.toString());
 
-                            var tyrematchjson = {
-                              "TM_Inspection_id": "N/A",
-                              "Tyre_match_kit_id": "N/A",
-                              "RS1 A": "N/A",
-                              "RS2 A": "N/A",
-                              "RS1 B": "N/A",
-                              "RS2 B": "N/A",
-                              "Distance_mode": "N/A",
-                              "AtmPresure": "N/A",
-                              "Temperature": "N/A",
-                              "Air_moisture": "N/A",
-                              "Test_counter": "N/A",
-                            };
+                            //  tyrematchjson = {
+                            //   "TM_Inspection_id": "N/A",
+                            //   "Tyre_match_kit_id": "N/A",
+                            //   "RS1 A": "N/A",
+                            //   "RS2 A": "N/A",
+                            //   "RS1 B": "N/A",
+                            //   "RS2 B": "N/A",
+                            //   "Distance_mode": "N/A",
+                            //   "AtmPresure": "N/A",
+                            //   "Temperature": "N/A",
+                            //   "Air_moisture": "N/A",
+                            //   "Menu_number": "N/A",
+                            // };
                             DateTime now = DateTime.now();
                             String formattedDate =
                                 DateFormat('dd-MM-yyyy–kk-mm-ss').format(now);
@@ -873,7 +829,7 @@ class _SlidepageState extends State<Slidepage> {
                                                   BorderRadius.circular(10),
                                             ),
                                             child: Text(
-                                              " ${avg[0].toStringAsFixed(3)}",
+                                              " ${avg[0].toStringAsFixed(4)}",
                                               style: GoogleFonts.lora(
                                                 textStyle: styledata,
                                               ),
@@ -928,7 +884,7 @@ class _SlidepageState extends State<Slidepage> {
                                                 start: 8.0),
                                             width: 140,
                                             child: Text(
-                                              "Axle Analysis",
+                                              "R/F RC ratio",
                                               style: TextStyle(fontSize: 22),
                                             )),
                                         Expanded(
@@ -1084,6 +1040,62 @@ class _SlidepageState extends State<Slidepage> {
                                             )
                                           : Container()
                               : Container(),
+
+   slip == true
+                              ? widget.c2.toString() == "false"
+                                  ? Container()
+                                  : avg.isEmpty
+                                      ? Text("empty")
+                                      : 1 == 1 //typetest.contains("2")
+                                          ? Row(
+                                              children: [
+                                                Container(
+                                                    padding:
+                                                        EdgeInsetsDirectional
+                                                            .only(start: 8.0),
+                                                    width: 140,
+                                                    child: Text(
+                                                      "Distance A/B",
+                                                      style: TextStyle(
+                                                          fontSize: 22),
+                                                    )),
+                                                Expanded(
+                                                  child: Container(
+                                                    margin:
+                                                        const EdgeInsets.all(
+                                                            15.0),
+                                                    padding:
+                                                        const EdgeInsets.all(
+                                                            3.0),
+                                                    decoration: BoxDecoration(
+                                                      border: Border.all(
+                                                          color: Color.fromARGB(
+                                                              255,
+                                                              19,
+                                                              107,
+                                                              11)),
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                              10),
+                                                    ),
+                                                    child: Text(
+                                                      " $da / $db",
+                                                      style: GoogleFonts.lora(
+                                                        textStyle: styledata,
+                                                      ),
+                                                    ),
+                                                  ),
+                                                )
+                                              ],
+                                            )
+                                          : Container()
+                              : Container(),
+
+
+
+
+
+
                           axeldiff == true
                               ? widget.c2.toString() == "false"
                                   ? Container()
@@ -1138,7 +1150,7 @@ class _SlidepageState extends State<Slidepage> {
                                                         start: 8.0),
                                                 width: 140,
                                                 child: Text(
-                                                  "RC ratio ",
+                                                  "Left / Right ",
                                                   style:
                                                       TextStyle(fontSize: 22),
                                                 )),

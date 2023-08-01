@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:flutter_blue_app/main.dart';
 import 'package:location/location.dart' as loc;
 
 import 'package:device_info_plus/device_info_plus.dart';
@@ -29,6 +30,12 @@ class _LoginState extends State<Login> {
   String password = "123456";
   String password1 = "1234567";
   var data;
+  bool _obscureText = true;
+  void _toggle() {
+    setState(() {
+      _obscureText = !_obscureText;
+    });
+  }
 
   Future login() async {
     try {
@@ -97,6 +104,7 @@ class _LoginState extends State<Login> {
     status = false;
     crt();
     super.initState();
+    getper();
   }
 
   void dispose() {
@@ -111,6 +119,8 @@ class _LoginState extends State<Login> {
       var result = await permission.request();
       if (result == PermissionStatus.granted) {
         return true;
+      } else {
+        await permission.request();
       }
     }
     return false;
@@ -125,31 +135,16 @@ class _LoginState extends State<Login> {
     if (Platform.isAndroid) {
       DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
       AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
-      print('Running on ${androidInfo.manufacturer}');
+      print('Running on1 ${androidInfo.manufacturer}');
       if (androidInfo.manufacturer.toString() == "HUAWEI") {
         if (await _requestPermission(Permission.storage)) {
           var pathlist = await ExternalPath.getExternalStorageDirectories();
           if (pathlist.length > 1) {
             newPath = pathlist[1];
-          }
-          else{
-                        newPath = pathlist[0];
-
+          } else {
+            newPath = pathlist[0];
           }
           print("herehereherehere" + pathlist.toString());
-          // directory = (await getExternalStorageDirectory());
-          // print("herehereherehere1" + directory.path.toString());
-
-          // List<String> paths = directory.path.split("/");
-          // for (int x = 1; x < paths.length; x++) {
-          //   String folder = paths[x];
-          //   if (folder != "Android") {
-          //     newPath += "/" + folder;
-          //   } else {
-          //     break;
-          //   }
-          // }
-          //   print("herehereherehere2" + newPath.toString());
 
           String np2 = newPath + "/bridge/vehicle";
           newPath = newPath + "/bridge/user";
@@ -163,40 +158,22 @@ class _LoginState extends State<Login> {
       }
 
       if (!androidInfo.manufacturer.toString().contains("HUAWEI")) {
-        if (await _requestPermission(Permission.storage) &&
-            // access media location needed for android 10/Q
-            await _requestPermission(Permission.accessMediaLocation) &&
-            // manage external storage needed for android 11/R
-            await _requestPermission(Permission.manageExternalStorage)) {
-         // directory = (await getExternalStorageDirectory());
-          // List<String> paths = directory.path.split("/");
-          // for (int x = 1; x < paths.length; x++) {
-          //   String folder = paths[x];
-          //   if (folder != "Android") {
-          //     newPath += "/" + folder;
-          //   } else {
-          //     break;
-          //   }
-          // }
-          // print("ioioioi2" + newPath.toString());
-            var path = await ExternalPath.getExternalStorageDirectories();
-          if (path.length > 1) {
-            newPath = path[1];
-          }
-          else{
-                        newPath = path[0];
-
-          }
-          print("herehereherehere" + path.toString());
-          String np2 = newPath + "/bridge/vehicle";
-          newPath = newPath + "/bridge/user";
-
-          print("eeeeeeeeeeeeeeeeee" + newPath);
-          directory = Directory(newPath);
-          await directory.create(recursive: true);
-          directory = Directory(np2);
-          await directory.create(recursive: false);
+        var path = await ExternalPath.getExternalStorageDirectories();
+        if (path.length > 1) {
+          newPath = path[1];
+        } else {
+          newPath = path[0];
         }
+        print("herehereherehere" + path.toString());
+        String np2 = newPath + "/bridge/vehicle";
+        newPath = newPath + "/bridge/user";
+
+        print("eeeeeeeeeeeeeeeeee" + newPath);
+        directory = Directory(newPath);
+        await directory.create(recursive: true);
+        directory = Directory(np2);
+        await directory.create(recursive: false);
+        File(newPath.toString() + "/hh.txt");
       }
 
       // newPath = newPath + "/bridge/user";
@@ -275,11 +252,26 @@ class _LoginState extends State<Login> {
                                             ],
                                           ),
                                           child: TextFormField(
+                                            style: TextStyle(fontSize: 20),
                                             autocorrect: false,
-                                            obscureText: true,
+                                            obscureText: _obscureText,
                                             textAlign: TextAlign.center,
                                             maxLines: 1,
                                             decoration: InputDecoration(
+                                              suffixIcon: new GestureDetector(
+                                                onTap: () {
+                                                  setState(() {
+                                                    _obscureText =
+                                                        !_obscureText;
+                                                  });
+                                                },
+                                                child: new Icon(
+                                                  _obscureText
+                                                      ? Icons.visibility
+                                                      : Icons.visibility_off,
+                                                  size: 15,
+                                                ),
+                                              ),
                                               hintStyle: const TextStyle(
                                                   color: Colors.black,
                                                   fontWeight: FontWeight.w600),

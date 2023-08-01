@@ -1,3 +1,4 @@
+import 'dart:developer';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -200,7 +201,9 @@ class _SearchVehicleState extends State<SearchVehicle> {
                             itemBuilder: (context, index) {
                               return InkWell(
                                 onTap: () {
-                                  print("rami+${_foundUsers[index]}");
+                                  log("rami+${_foundUsers[index]["Registration_plate "]}");
+
+                                  
                                   Provider.of<downloadFileProvider>(context,
                                           listen: false)
                                       .setInputVehicule(_foundUsers[index]);
@@ -223,6 +226,7 @@ class _SearchVehicleState extends State<SearchVehicle> {
                                     Navigator.of(context).push(
                                         MaterialPageRoute(
                                             builder: (_) => TyreInspection(
+
                                                 details: _foundUsers[index]
                                                     ['Registration_plate'],
                                                 date: _foundUsers[index]

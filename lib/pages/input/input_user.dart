@@ -45,11 +45,12 @@ class _InputUserState extends State<InputUser> {
   var tr;
   @override
   void initState() {
+    stst();
     if (widget.color == "1") {
       tr = false;
     }
     super.initState();
-    stst();
+
   }
 
   Future<bool> _requestPermission(Permission permission) async {
@@ -66,15 +67,15 @@ class _InputUserState extends State<InputUser> {
 
   var i = 0;
   stst() async {
-    print("hneeeeeeeee");
+    print("hneeeeeeeee11");
     Directory directory;
-    try {
+
       String newPath = "";
 
       if (Platform.isAndroid) {
         DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
         AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
-        print('Running on ${androidInfo.manufacturer}');
+        print('Running4 on ${androidInfo.manufacturer}');
         if (androidInfo.manufacturer.toString() == "HUAWEI") {
           if (await _requestPermission(Permission.storage) //&&
               // access media location needed for android 10/Q
@@ -100,12 +101,14 @@ class _InputUserState extends State<InputUser> {
         }
 
         if (!androidInfo.manufacturer.toString().contains("HUAWEI")) {
+          print("4444444");
           if (await _requestPermission(Permission.storage) &&
               // access media location needed for android 10/Q
               await _requestPermission(Permission.accessMediaLocation) &&
               // manage external storage needed for android 11/R
               await _requestPermission(Permission.manageExternalStorage)) {
                   var pathlist = await ExternalPath.getExternalStorageDirectories();
+                  print(pathlist);
           if (pathlist.length > 1) {
             newPath = pathlist[1];
           }
@@ -122,7 +125,7 @@ class _InputUserState extends State<InputUser> {
       }
 
       exist = true;
-
+print("ramiiiiii"+newPath.toString());
       String info = await File(newPath + "/user.json").readAsString();
       print("vvvvvvvvvvvvvvvvvvvv" + info.toString());
       var kl = jsonDecode(info);
@@ -142,9 +145,7 @@ class _InputUserState extends State<InputUser> {
         _lnameController.text = prefs41;
         _CountryController.text = prefs43;
       }
-    } catch (e) {
-      print(e);
-    }
+
 
     return exist;
   }
